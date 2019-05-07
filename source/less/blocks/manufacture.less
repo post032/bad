@@ -1,0 +1,126 @@
+.manufacture {
+  box-sizing: border-box;
+  position: relative;
+  background: #FFFFFF;
+}
+
+.manufacture__blocks {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  margin-top: -133px;
+  padding-bottom: 70px;
+}
+
+.manufacture__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.manufacture__img2,
+.manufacture__img1 {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.manufacture__info {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.manufacture__text {
+  width: 90%;
+  margin-bottom: 29px;
+}
+
+.manufacture__info h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 42px;
+  .title-m;
+}
+
+.manufacture__info h2::after {
+  .title-line;
+}
+
+.manufacture__text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: @text-color;
+  margin-bottom: 21px;
+}
+
+.manufacture__info a {
+  text-decoration: none;
+  .button-m;
+}
+
+.manufacture__block2 {
+  flex-direction: column-reverse;
+  // margin-top: 66px;
+}
+@media (min-width: @size-tablet) {
+  .manufacture__info a {
+    .button-t;
+  }
+
+  .manufacture__info h2 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    .title-t;
+  }
+
+  .manufacture__text {
+    width: 350px;
+    margin-bottom: 29px;
+  }
+
+  .manufacture__block {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .manufacture__info {
+  align-items: flex-start;
+  }
+}
+@media (min-width: @size-desktop) {
+  .manufacture__img1 {
+    width: 385px;
+    height: 385px;
+    margin-top: 23px;
+  }
+
+  .manufacture__img2 {
+    width: 350px;
+    height: 349px;
+    margin-top: 30px;
+    margin-right: 57px;
+  }
+
+  .manufacture__text {
+    width: 408px;
+    margin-bottom: 29px;
+  }
+
+  .manufacture__block2 {
+    margin-top: 50px;
+  }
+
+  .manufacture__block {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 93px;
+    margin-right: 73px;
+  }
+}

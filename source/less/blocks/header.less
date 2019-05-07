@@ -1,0 +1,39 @@
+.header__bg {
+  background-color: @purple-bg;
+}
+
+.header {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header a img {
+  width: 62px;
+  height: 84px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+@media (min-width: @size-tablet) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .header__menu {
+    margin: 0;
+  }
+  }
+
+  @media (min-width: @size-desktop) {
+    .header {
+      padding: 0;
+    }
+  }

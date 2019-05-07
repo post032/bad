@@ -1,0 +1,168 @@
+.menu {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.menu ul {
+  padding: 0;
+  list-style-type: none;
+  animation: bounce 0.5s;
+  position: relative;
+  z-index: 1000;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-200px);
+  }
+}
+
+.menu ul li a {
+  display: block;
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 18px;
+  color: @text-menu;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu ul li .menu__active {
+  color: @cyan;
+  border-bottom: 4px solid @cyan;
+}
+
+
+.menu-open {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background 0.3s;
+}
+
+.menu-open {
+  width: 24px;
+}
+
+.menu-hide {
+  display: none;
+}
+
+.menu-open:focus {
+  outline: none;
+}
+
+.menu-open span {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: @text-menu;
+}
+
+.menu-open span::after,
+.menu-open span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: @text-menu;
+  content: "";
+}
+
+.menu-open span::before {
+  top: -7px;
+}
+
+.menu-open span::after {
+  bottom: -7px;
+}
+
+.menu-open--htx {
+  background-color: @purple-bg;
+}
+
+.menu-open--htx span {
+  transition: background 0s 0.3s;
+}
+
+.menu-open--htx span::after,
+.menu-open--htx span::before {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.menu-open--htx span::before {
+  transition-property: top, transform;
+}
+
+.menu-open--htx span::after {
+  transition-property: bottom, transform;
+}
+/* состояние active при открытом меню  */
+.menu-open--htx.is-active {
+  background-color: @purple-bg;
+}
+
+.menu-open--htx.is-active span {
+  background: none;
+}
+
+.menu-open--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-open--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.menu-open--htx.is-active span::after,
+.menu-open--htx.is-active span::before {
+  transition-delay: 0s, 0.3s;
+}
+
+@media (min-width: @size-tablet) {
+  .menu-open {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .menu ul li a {
+    padding: 20px 0;
+  }
+
+  .menu ul li {
+    margin: 0;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @size-desktop) {
+  .menu ul li a {
+    padding: 45px 0;
+  }
+}

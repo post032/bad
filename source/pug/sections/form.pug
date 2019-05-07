@@ -1,0 +1,18 @@
+section.form.container
+  h2.form__title Оставьте заявку и мы свяжемся
+section.form__bg
+  div.form__block
+    div.form__img-bg
+      img(src="img/link.png").form__img
+    form(action="index.html" method="post").container
+      label(for="name").visually-hidden Ваше имя
+      input(id="name" type="text" name="name" placeholder="Ваше имя").form__input
+      label(for="phone").visually-hidden Ваше имя
+      input(id="phone" type="tel" name="phone" placeholder="Номер телефона").form__input
+      label(for="mail").visually-hidden E-mail
+      input(id="mail" type="mail" name="mail" placeholder="E-mail").form__input
+      textarea(name="comments" rows="8" cols="49" placeholder="Комментарий")
+      label(for="check").form__check-text
+        input(id="check" type="checkbox" name="mail").form__check 
+        span  Я согласен с политикой конфиденциальности
+      input(type="submit" value="Отправить заявку").form__submit

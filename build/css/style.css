@@ -1073,18 +1073,6 @@ input[type="radio"].visually-hidden {
   color: #393939;
 }
 .news__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-top: 20px;
 }
 .news__data--color {
@@ -1101,7 +1089,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 218px;
+  min-height: 145px;
 }
 @media (min-width: 768px) {
   .news {
@@ -1150,6 +1138,11 @@ input[type="radio"].visually-hidden {
   .news__lists {
     min-height: 340px;
   }
+  .news__description {
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 @media (min-width: 1070px) {
   .news__title {
@@ -1175,7 +1168,7 @@ input[type="radio"].visually-hidden {
     line-height: 16px;
   }
   .news__data--color {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .news__list img {
     width: 160px;
@@ -1188,8 +1181,21 @@ input[type="radio"].visually-hidden {
   .news__description {
     font-size: 14px;
     line-height: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .news__info2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 218px;
   }
 }
 .form {
@@ -2552,10 +2558,13 @@ input[type="radio"].visually-hidden {
     margin-right: 20px;
   }
   .new__block {
+    width: 720px;
+  }
+  .new__block {
     margin-bottom: 36px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1070px) {
   .new__list img {
     margin-left: 0;
     margin-right: 30px;

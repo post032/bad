@@ -1,0 +1,31 @@
+.new {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.new__title {
+  margin: 49px 20px 59px;
+  .title-m;
+}
+
+.new__title::after {
+  .title-line;
+}
+
+.new__block {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @size-tablet) {
+  .new__title {
+    margin-left: 64px;
+    margin-bottom: 36px;
+    .title-t;
+  }
+
+  .new__block {
+    margin-bottom: 36px;
+  }
+}

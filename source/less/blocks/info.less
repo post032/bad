@@ -1,0 +1,159 @@
+.info {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.info__block {
+  background-image: url("../img/news-full.png");
+  background-repeat: no-repeat;
+  width: 90%;
+  min-height: 232px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.info__block::after {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 232px;
+  background: linear-gradient(41.06deg, rgba(19, 9, 35, 0.7) 16%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info__category {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 900;
+  color: @white_text;
+  margin-left: 30px;
+  margin-top: 19px;
+  position: relative;
+  z-index: 5;
+}
+
+.info__name {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+  color: @white_text;
+}
+
+.info__data {
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: @white_text;
+  margin: 3px 0;
+}
+
+.info__info {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 21px;
+}
+
+.info__text {
+  margin: 0 20px;
+}
+
+.info__text p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: @text-color;
+}
+
+.info__lists {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__line {
+  background: linear-gradient(90deg, #6A0EB1 0%, #7B25FA 100%);
+}
+
+.info__list {
+  display: flex;
+}
+
+.info__info2 {
+  width: 170px;
+}
+@media (min-width: @size-tablet) {
+  .info__block,
+  .info__lists,
+  .info__text {
+    max-width: 980px;
+    margin-left: 64px;
+  }
+
+  .info__info2 {
+    width: 245px;
+  }
+
+  .info__list {
+    margin-top: 20px;
+  }
+
+  .info__list img {
+    margin-left: 0;
+  }
+
+  .info__text {
+    margin-top: 35px;
+    margin-bottom: 49px;
+  }
+
+  .info__text p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .info__info {
+    width: 420px;
+  }
+
+  .info__lists {
+    margin-bottom: 54px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .info__text {
+    margin-top: 65px;
+    margin-bottom: 89px;
+  }
+
+  .info__lists {
+    margin-bottom: 124px;
+  }
+
+  .info__category {
+    font-size: 18px;
+  }
+
+  .info__list {
+    margin-right: 30px;
+  }
+
+  .info__name {
+    font-size: 24px;
+  }
+
+  .info__data {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

@@ -1137,6 +1137,10 @@ input[type="radio"].visually-hidden {
   .news__lists {
     min-height: 340px;
   }
+  .news__list img {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
 }
 @media (min-width: 1070px) {
   .news__title {
@@ -1167,7 +1171,7 @@ input[type="radio"].visually-hidden {
   .news__list img {
     width: 160px;
     height: 219px;
-    margin: 0 30px;
+    margin-right: 30px;
   }
   .news__name2 {
     font-size: 18px;

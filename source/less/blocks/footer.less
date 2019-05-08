@@ -78,7 +78,7 @@
   text-decoration: none;
 }
 
-.footer__block h3 {
+.footer__block-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -90,13 +90,13 @@
   position: relative;
 }
 
-.footer__rotate h3::after {
-  border-left: 18px solid #ffffff;
+.footer__rotate .footer__block-title::after {
+  // border-left: 18px solid #ffffff;
   transform: rotate(90deg);
   transition: 1s;
 }
 
-.footer__block h3::after {
+.footer__block-title::after {
   content: "";
   display: block;
   width: 0;
@@ -116,7 +116,7 @@
 }
 
 @media (min-width: @size-tablet) {
-  .footer__block h3::after {
+.footer__block-title::after {
     display: none;
   }
 

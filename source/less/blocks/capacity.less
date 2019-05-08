@@ -45,17 +45,19 @@
   .title-line;
 }
 
-.capacity__info h3 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: @text-color;
-}
+
 
 .capacity__info p {
   font-size: 10px;
   line-height: 14px;
   font-weight: bold;
+  color: @text-color;
+}
+
+.capacity__info .capacity__info-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
   color: @text-color;
 }
 
@@ -84,7 +86,7 @@
     margin-right: 100px;
   }
 
-  .capacity__info h3 {
+  .capacity__info .capacity__info-title {
     font-size: 26px;
     line-height: 30px;
   }
@@ -105,14 +107,14 @@
   }
 }
 @media (min-width: @size-desktop) {
-  .capacity__info h3 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
   .capacity__info p {
     font-size: 24px;
     line-height: 29px;
+  }
+
+  .capacity__info .capacity__info-title {
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .capacity__lists li span {

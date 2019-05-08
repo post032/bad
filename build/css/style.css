@@ -554,7 +554,7 @@ input[type="radio"].visually-hidden {
   width: 90%;
   margin-bottom: 29px;
 }
-.manufacture__info h2 {
+.manufacture__title {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 42px;
@@ -564,7 +564,7 @@ input[type="radio"].visually-hidden {
   color: #2E2556;
   position: relative;
 }
-.manufacture__info h2::after {
+.manufacture__title::after {
   content: "";
   display: block;
   width: 60px;
@@ -614,7 +614,7 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     width: 294px;
   }
-  .manufacture__info h2 {
+  .manufacture__title {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -1433,7 +1433,7 @@ input[type="radio"].visually-hidden {
   padding: 13px 0;
   text-decoration: none;
 }
-.footer__block h3 {
+.footer__block-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -1444,14 +1444,13 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   position: relative;
 }
-.footer__rotate h3::after {
-  border-left: 18px solid #ffffff;
+.footer__rotate .footer__block-title::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-transition: 1s;
   transition: 1s;
 }
-.footer__block h3::after {
+.footer__block-title::after {
   content: "";
   display: block;
   width: 0;
@@ -1477,7 +1476,7 @@ input[type="radio"].visually-hidden {
   margin: 0 20px;
 }
 @media (min-width: 768px) {
-  .footer__block h3::after {
+  .footer__block-title::after {
     display: none;
   }
   .footer__hide {
@@ -1569,16 +1568,16 @@ input[type="radio"].visually-hidden {
   top: 50px;
   left: 0;
 }
-.capacity__info h3 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #393939;
-}
 .capacity__info p {
   font-size: 10px;
   line-height: 14px;
   font-weight: bold;
+  color: #393939;
+}
+.capacity__info .capacity__info-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
   color: #393939;
 }
 .capacity__lists li span {
@@ -1605,7 +1604,7 @@ input[type="radio"].visually-hidden {
   .capacity__info {
     margin-right: 100px;
   }
-  .capacity__info h3 {
+  .capacity__info .capacity__info-title {
     font-size: 26px;
     line-height: 30px;
   }
@@ -1623,13 +1622,13 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1070px) {
-  .capacity__info h3 {
-    font-size: 36px;
-    line-height: 44px;
-  }
   .capacity__info p {
     font-size: 24px;
     line-height: 29px;
+  }
+  .capacity__info .capacity__info-title {
+    font-size: 36px;
+    line-height: 44px;
   }
   .capacity__lists li span {
     font-size: 36px;
@@ -1692,7 +1691,7 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
   margin-right: 20px;
 }
-.capsule__name h3 {
+.capsule__name .capsule__name-title {
   font-size: 24px;
   line-height: 87px;
   font-weight: bold;
@@ -1763,7 +1762,7 @@ input[type="radio"].visually-hidden {
     font-size: 36px;
     text-align: left;
   }
-  .capsule__name h3 {
+  .capsule__name .capsule__name-title {
     font-size: 55px;
   }
   .capsule__lists li a img,
@@ -1985,14 +1984,6 @@ input[type="radio"].visually-hidden {
   width: 86px;
   height: 71px;
 }
-.catalog__products-lists li a h3 {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: bold;
-  color: #2E2556;
-  margin-top: 19px;
-  margin-bottom: 8px;
-}
 .catalog__products-lists li a p {
   font-size: 13px;
   font-weight: normal;
@@ -2000,6 +1991,14 @@ input[type="radio"].visually-hidden {
   color: #393939;
   margin-top: 3px;
   margin-bottom: 3px;
+}
+.catalog__products-lists li a .catalog__products-name {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #2E2556;
+  margin-top: 19px;
+  margin-bottom: 8px;
 }
 @media (min-width: 768px) {
   .catalog__products-lists li a img {

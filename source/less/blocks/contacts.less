@@ -1,0 +1,149 @@
+.contacts {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__blocks {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.contacts__title {
+  margin: 49px 20px 59px;
+  .title-m;
+}
+
+.contacts__title::after {
+  .title-line;
+}
+
+.contacts__map {
+  width: 90%;
+  height: 333px;
+  background: url("../img/map.png") no-repeat;
+  overflow: hidden;
+}
+
+.contacts__block {
+  width: 90%;
+  background: @green;
+}
+
+.contacts__block p,
+.contacts__block p a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: @white_text;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.contacts__block .contacts__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: @white_text;
+}
+
+.contacts__button {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: @white_text;
+  width: 90%;
+  min-height: 56px;
+  background: @green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border: none;
+}
+@media (min-width: @size-tablet) {
+  .contacts__map {
+    height: 444px;
+    max-width: 630px;
+    margin-right: 20px;
+  }
+
+
+
+  .contacts__title {
+    margin-left: 64px;
+    margin-bottom: 36px;
+    .title-t;
+  }
+
+  .contacts__info {
+    margin-right: 15px;
+    width: 295px;
+  }
+
+  .contacts__blocks {
+    flex-direction: row;
+    align-items: flex-start;
+    // justify-content: space-between;
+    margin-left: 64px;
+  }
+
+
+
+  .contacts__block {
+      padding-bottom: 42px;
+  }
+
+  .contacts__block,
+  .contacts__button {
+    width: 295px;
+  }
+
+  .contacts__button {
+    margin-top: 35px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .contacts__map {
+    width: 630px;
+    height: 533px;
+  }
+
+  .contacts__block p,
+  .contacts__block p a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts__block .contacts__name {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 29px;
+    margin-bottom: 40px;
+  }
+.contacts__info,
+  .contacts__block,
+  .contacts__button {
+    width: 380px;
+  }
+  .contacts__info {
+    margin-right: 30px;
+  }
+
+  .contacts__block,
+  .contacts__button {
+    width: 380px;
+  }
+}

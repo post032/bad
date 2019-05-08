@@ -20,6 +20,12 @@ a {
   text-decoration: none;
 }
 
+.slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .connect {
   width: 285px;
   min-height: 43px;
@@ -58,6 +64,15 @@ a {
     max-width: 1110px;
     position: relative;
   }
+}
+
+.slick-next {
+  right: 0;
+z-index: -1;
+}
+
+.slick-prev {
+  left: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),

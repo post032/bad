@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Контрактное производство БАД и косметики</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -29,60 +31,78 @@
       <div class="container">
         <button class="connect">Связаться с нами</button>
       </div>
-      <section class="capacity container">
-        <h2 class="capacity__title">Производственные мощности</h2>
-        <ul class="capacity__lists">
-          <li><a href="capsule.html"><img src="img/capsule.svg">
-              <div class="capacity__info">
-                <h3>Капсулирование</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#"><img src="img/group.svg">
-              <div class="capacity__info">
-                <h3>Таблетирование</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#"><img src="img/capsules.svg">
-              <div class="capacity__info">
-                <h3>Блистерование</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#"><img src="img/baby-powder.svg">
-              <div class="capacity__info">
-                <h3>Сыпучие продукты</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#"><img src="img/ampule.svg">
-              <div class="capacity__info">
-                <h3>Ампулирование</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#">      <img src="img/clean.svg">
-              <div class="capacity__info">
-                <h3>Цех разлива</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#"><img src="img/drag.svg">
-              <div class="capacity__info">
-                <h3>Шипучие таблетки</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-          <li><a href="#"><img src="img/lotion.svg">
-              <div class="capacity__info">
-                <h3>Крема и гели</h3>
-                <p>Информация, статистика,<br> превью, описание</p>
-              </div><span>200 000<br> доз в день</span></a></li>
-        </ul>
-        <h2 class="power__title">Дополнительные услуги</h2>
-        <ul class="power__lists">
-          <li><a href="#"><img src="img/sertificat.svg">
-              <p>Сертифицирование продукции</p></a></li>
-          <li><a href="#">   <img src="img/pack.svg">
-              <p>Цех упаковки</p></a></li>
-          <li><a href="#"><img src="img/structure.svg">
-              <p>Разработка состава</p></a></li>
-          <li><a href="#"><img src="img/trolley.svg">
-              <p>Логистика</p></a></li>
+      <section class="product container">
+        <h1 class="product__title">Наша продукция</h1>
+        <div class="product__block">
+          <section class="product__block-img">
+            <ul class="product__lists">
+              <li><img src="img/product-full.png"></li>
+              <li><img src="img/product-full.png"></li>
+              <li><img src="img/product-full.png"></li>
+            </ul><img src="img/product-full.png">
+          </section>
+          <div class="product__description"><span class="product__name">Название препарата</span>
+            <p>Биологически активная добавка к пище Wiki Brain — натуральный препарат для стимуляции умственной активности на основе вытяжек и концентратов лекарственных растений. Улучшает передачу нервных импульсов и работу всех отделов головного мозга, помогает при нарушениях функции памяти. WikiBrain легко усваивается организмом и начинает действовать максимально быстро, дополнительно воздействуя на функции эндокринной, иммунной и нервной систем.</p>
+            <table>
+              <tr>
+                <th> <span>Форма выпуска:</span></th>
+                <td> 
+                  <p>Порошки</p>
+                </td>
+              </tr>
+              <tr>
+                <th><span>Тип упаковки:</span></th>
+                <td>
+                  <p>Картон</p>
+                </td>
+              </tr>
+              <tr>
+                <th><span>Колличество в пачке:</span></th>
+                <td>
+                  <p>30 штук</p>
+                </td>
+              </tr>
+              <tr>
+                <th><span>Условия хранения:</span></th>
+                <td>
+                  <p>Хранить в сухом, недоступном для детей месте, при температуре не выше +25°С</p>
+                </td>
+              </tr>
+            </table>
+            <button>Рассчитать стоимость</button>
+          </div>
+        </div><span class="product__title">Вас может заинтересовать</span>
+        <ul class="catalog__products-lists">
+          <li><a href="product.html"><img src="img/product.png">
+              <h3>Название препарата</h3>
+              <p>Форма выпуска</p>
+              <p>Тип упаковки</p>
+              <p>Колличество в пачке</p></a></li>
+          <li><a href="#"><img src="img/product.png">
+              <h3>Название препарата</h3>
+              <p>Форма выпуска</p>
+              <p>Тип упаковки</p>
+              <p>Колличество в пачке</p></a></li>
+          <li><a href="#"><img src="img/product.png">
+              <h3>Название препарата</h3>
+              <p>Форма выпуска</p>
+              <p>Тип упаковки</p>
+              <p>Колличество в пачке</p></a></li>
+          <li><a href="#"><img src="img/product.png">
+              <h3>Название препарата</h3>
+              <p>Форма выпуска</p>
+              <p>Тип упаковки</p>
+              <p>Колличество в пачке</p></a></li>
+          <li><a href="#"><img src="img/product.png">
+              <h3>Название препарата</h3>
+              <p>Форма выпуска</p>
+              <p>Тип упаковки</p>
+              <p>Колличество в пачке</p></a></li>
+          <li><a href="#"><img src="img/product.png">
+              <h3>Название препарата</h3>
+              <p>Форма выпуска</p>
+              <p>Тип упаковки</p>
+              <p>Колличество в пачке</p></a></li>
         </ul>
       </section>
       <div class="constructor__bg">
@@ -175,6 +195,8 @@
       <div class="footer__politic container"><a href="#">Политика конфиденциальности</a></div>
     </footer>
     <script type="text/javascript" src="js/jquery.min-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min-migrate-1.4.1.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

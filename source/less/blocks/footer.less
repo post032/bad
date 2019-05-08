@@ -41,6 +41,16 @@
   display: none;
 }
 
+.footer__lists {
+  animation: bounce 0.5s;
+
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateX(-200px);
+      }
+}
+
 .footer__social {
   display: flex;
 }
@@ -78,6 +88,12 @@
   margin: 0;
   text-decoration: none;
   position: relative;
+}
+
+.footer__rotate h3::after {
+  border-left: 18px solid #ffffff;
+  transform: rotate(90deg);
+  transition: 1s;
 }
 
 .footer__block h3::after {

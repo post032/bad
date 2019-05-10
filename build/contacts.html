@@ -19,7 +19,7 @@
             <li><a href="power.html">Производственные мощности</a></li>
             <li><a href="service.html">Услуги</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="constructor.html">Конструктор</a></li>
+            <li><a href="design.html">Конструктор</a></li>
             <li><a href="news.html">Новости</a></li>
           </ul>
         </nav>
@@ -43,10 +43,25 @@
               <p>E-mail:<a href="mailto:admin@uni-eco.com">admin@uni-eco.com</a></p>
               <p>Время работы: с 9:00 до 20:00</p>
             </div>
-            <button class="contacts__button">Отправить заявку</button>
+            <button class="contacts__button" id="modal">Отправить заявку</button>
           </div>
           <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.5624124508076!2d37.56524531564143!3d55.852907991734625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537af95775231%3A0xd40eb08aa37116f5!2z0JTQvNC40YLRgNC-0LLRgdC60L7QtSDRiC4sIDYwLCDQnNC-0YHQutCy0LAsIDEyNzQ3NA!5e0!3m2!1sru!2sru!4v1557328355945!5m2!1sru!2sru" width="650" height="533" frameborder="0" style="border:0" allowfullscreen></iframe></div>
         </section>
+      </section>
+      <section class="modal form__block modal__open">
+        <form action="index.html" method="post">
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя">
+          <label class="visually-hidden" for="phone">Ваше имя</label>
+          <input class="form__input" id="phone" type="tel" name="phone" placeholder="Номер телефона">
+          <label class="visually-hidden" for="mail">E-mail</label>
+          <input class="form__input" id="mail" type="mail" name="mail" placeholder="E-mail">
+          <textarea name="comments" rows="8" cols="49" placeholder="Комментарий"></textarea>
+          <label class="form__check-text" for="check">
+            <input class="form__check" id="check" type="checkbox"><span> Я согласен с политикой конфиденциальности</span>
+          </label>
+          <input class="form__submit" type="submit" value="Отправить заявку">
+        </form>
       </section>
       <div class="constructor__bg">
         <section class="constructor container">
@@ -79,7 +94,7 @@
         </div>
         <div class="footer__block" id="catalog1">
           <p class="footer__block-title" id="catalog">Каталог</p>
-          <ul class="footer__lists footer__hide" id="catalog-open">
+          <ul class="footer__lists" id="catalog-open">
             <li><a href="#">Капли</a></li>
             <li><a href="#">Капсулы</a></li>
             <li><a href="#">Порошки</a></li>

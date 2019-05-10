@@ -24,6 +24,10 @@
     $('#form-two').toggleClass('catalog__form-hide');
   });
 
+  $('.connect').click(function() {
+    $('.modal').toggleClass('modal__open');
+  });
+
 
   $('#catalog').click(function() {
     $('#catalog1').toggleClass('footer__rotate');
@@ -41,7 +45,6 @@
     $('#partner1').toggleClass('footer__rotate');
     $('#partner-open').toggleClass('footer__hide');
   });
-
 
 
   $('.capsule__lists').slick({

@@ -24,6 +24,10 @@
     $('#form-two').toggleClass('catalog__form-hide');
   });
 
+  $('.connect').click(function() {
+    $('.modal').toggleClass('modal__open');
+  });
+
 
   $('#catalog').click(function() {
     $('#catalog1').toggleClass('footer__rotate');
@@ -42,6 +46,15 @@
     $('#partner-open').toggleClass('footer__hide');
   });
 
+  $('#slender-click').click(function() {
+    $(this).toggleClass('.design__label-active');
+    if ($(this)==("design__icon2")){
+            $(this).addClass('design__icon2w');
+
+          }else{
+            $(this).removeClass('design__icon2w');
+  };
+});
 
 
   $('.capsule__lists').slick({

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Контрактное производство БАД и косметики</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header__bg">
+      <div class="header container">
+        <div class="header__menu"><a href="index.html"><img src="img/logo.png"></a>
+          <button class="menu-open menu-open--htx"><span>Открыть меню</span></button>
+        </div>
+        <nav class="menu menu-hide">
+          <ul>
+            <li><a class="menu__active" href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="power.html">Производственные мощности</a></li>
+            <li><a href="service.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="design.html">Конструктор</a></li>
+            <li><a href="news.html">Новости</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <button class="connect">Связаться с нами</button>
+      </div>
+      <section class="design container">
+        <h1 class="design__title">Соберите свой БАД</h1>
+        <p class="design__text">Наш конструктор из 9 шагов поможет создать продукт под Ваши требования</p>
+        <form action="design.html" method="post">
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 1</p>
+                <p class="design__name">Категория</p>
+                <input type="text" value="Снижение веса">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Выбор категории продукта</p>
+                <p>Мы предлагаем вам 8 самых популярных категорий продукции. При выборе ориентируйтесь на ключевые свойства вашего продукта и учитывайте потребности будущих покупателей.</p>
+                <p>Выберете подходящую категорию, кликнув по картинке, и переходите к Шагу 2.</p>
+              </div>
+            </div>
+            <div class="design__lists">
+              <input id="beauty" type="checkbox" name="Красота и молодость">
+              <div class="design__label">
+                <label for="beauty">
+                  <div class="design__icon design__icon1"></div><span>Красота и молодость</span>
+                </label>
+              </div>
+              <input id="slender" type="checkbox" name="Снижение веса">
+              <div class="design__label design__label-active" id="slender-click">
+                <label for="slender">
+                  <div class="design__icon design__icon2w"></div><span>Снижение веса</span>
+                </label>
+              </div>
+              <input id="pure" type="checkbox" name="Очищение">
+              <div class="design__label">
+                <label for="pure">
+                  <div class="design__icon design__icon3"></div><span>Очищение</span>
+                </label>
+              </div>
+              <input id="immunity" type="checkbox" name="Иммунитет">
+              <div class="design__label">
+                <label for="immunity">
+                  <div class="design__icon design__icon4"></div><span>Иммунитет</span>
+                </label>
+              </div>
+              <input id="women" type="checkbox" name="Женское здоровье">
+              <div class="design__label">
+                <label for="women">
+                  <div class="design__icon design__icon5"></div><span>Женское здоровье</span>
+                </label>
+              </div>
+              <input id="anty" type="checkbox" name="Анстрисесс/Тонус/Память">
+              <div class="design__label">
+                <label for="anty">
+                  <div class="design__icon design__icon6"></div><span>Анстрисесс/Тонус/Память</span>
+                </label>
+              </div>
+              <input id="sports" type="checkbox" name="Спортивное питание">
+              <div class="design__label">
+                <label for="sports">
+                  <div class="design__icon design__icon7"></div><span>Спортивное питание</span>
+                </label>
+              </div>
+              <input id="men" type="checkbox" name="Мужское здоровье">
+              <div class="design__label">
+                <label for="men">
+                  <div class="design__icon design__icon8"></div><span>Мужское здоровье</span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 2</p>
+                <p class="design__name">Форма продукта</p>
+                <input type="text" value="Порошки">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Выбор формы выпуска</p>
+                <p>Если вы хотите выпустить продукт в капсулах, выберете также вид капсул: целлюлозные или желатиновые. Шипучие таблетки выпускаются в стандартном размере (диаметр 2 см) и белом цвете. Вы всегда можете вернуться на шаг назад и изменить параметры ввода.</p>
+              </div>
+            </div>
+            <div class="design__lists">
+              <input id="powder" type="checkbox" name="Порошки">
+              <div class="design__label">
+                <label for="powder">
+                  <div class="design__icon design__icon9"></div><span>Порошки</span>
+                </label>
+              </div>
+              <input id="pod" type="checkbox" name="Капсулы №0">
+              <div class="design__label">
+                <label for="pod">
+                  <div class="design__icon design__icon10"></div><span>Капсулы №0</span>
+                </label>
+              </div>
+              <input id="bubbly" type="checkbox" name="Шипучие таблетки">
+              <div class="design__label">
+                <label for="bubbly">
+                  <div class="design__icon design__icon11"></div><span>Шипучие таблетки</span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 3</p>
+                <p class="design__name">Рецептура</p>
+                <input type="text" value="Не выбрано">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Выбор рецептуры</p>
+                <p>В предыдущих Шагах вы выбрали категорию и форму выпуска продукта. Для этих параметров мы подобрали доступные варианты рецептур. Все они созданы и протестированы в нашей лаборатории, имеют необходимые патенты и сертификаты. Вы можете добавить в базовую рецептуру свои ингредиенты. Для этого впишите их названия в поле «Добавить свой ингредиент».</p>
+              </div>
+            </div>
+            <div class="design__lists">
+              <input id="recipe1" type="checkbox" name="Рецептура 1">
+              <div class="design__label">
+                <label for="recipe1"><span>Рецептура 1</span>
+                  <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
+                </label>
+              </div>
+              <input id="recipe2" type="checkbox" name="Рецептура 2">
+              <div class="design__label">
+                <label for="recipe2"><span>Рецептура 2</span>
+                  <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
+                </label>
+              </div>
+              <input id="recipe3" type="checkbox" name="Рецептура 3">
+              <div class="design__label">
+                <label for="recipe3"><span>Рецептура 3</span>
+                  <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
+                </label>
+              </div>
+              <input id="recipe4" type="checkbox" name="Рецептура 4">
+              <div class="design__label">
+                <label for="recipe4"><span>Рецептура 4</span>
+                  <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
+                </label>
+              </div>
+              <input id="recipe5" type="checkbox" name="Рецептура 5">
+              <div class="design__label">
+                <label for="recipe5"><span>Рецептура 5</span>
+                  <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
+                </label>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 4</p>
+                <p class="design__name">Первичная упаковка</p>
+                <input type="text" value="Не выбрано">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Выбор первичной упаковки</p>
+                <p>В какой первичной упаковке будет представлена ваша продукция? Мы предлагаем вам на выбор тубы, банки, саше и пакеты флоупак. Обратите внимание: для каждой формы упаковки нужно выбрать размер, а также вариант печати — «Эконом» или «Премиум».</p>
+              </div>
+            </div>
+            <div class="design__items">
+              <div class="design__img"><span class="design__img1"></span></div>
+              <div class="design__list">
+                <input id="bank" type="checkbox" name="Порошки">
+                <div class="design__label">
+                  <label for="bank">
+                    <div class="design__icon design__icon12"></div><span>Банка</span><span class="design__medium">Премиум</span>
+                  </label>
+                </div>
+                <input id="sachet" type="checkbox" name="Капсулы №0">
+                <div class="design__label">
+                  <label for="sachet">
+                    <div class="design__icon design__icon13"></div><span>Саше</span><span class="design__medium">Эконом</span>
+                  </label>
+                </div>
+                <input id="pack" type="checkbox" name="Шипучие таблетки">
+                <div class="design__label">
+                  <label for="pack">
+                    <div class="design__icon design__icon14"></div><span>Флоу Пак</span><span class="design__medium">Эконом</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 5</p>
+                <p class="design__name">Вторичная упаковка</p>
+                <input type="text" value="Не выбрано">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Выбор вторичной упаковки</p>
+                <p>В какой первичной упаковке будет представлена ваша продукция? Мы предлагаем вам на выбор тубы, банки, саше и пакеты флоупак. Обратите внимание: для каждой формы упаковки нужно выбрать размер, а также вариант печати — «Эконом» или «Премиум».</p>
+              </div>
+            </div>
+            <div class="design__items">
+              <div class="design__img"><span class="design__img2"></span></div>
+              <div class="design__list">
+                <input id="box" type="checkbox" name="Красота и молодость">
+                <div class="design__label">
+                  <label for="box">
+                    <div class="design__icon design__icon14"></div><span>Коробка</span><span>Премиум</span>
+                  </label>
+                </div>
+                <input id="empty" type="checkbox" name="Снижение веса">
+                <div class="design__label">
+                  <label for="empty"><span>Без упаковки</span></label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 6</p>
+                <p class="design__name">Колличество</p>
+                <input type="text" value="Не выбрано">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Колличество в коробке</p>
+                <p>Какое количество продукции будет в первичной упаковке? Чтобы определить цифру в граммах или штуках, двигайте ползунок по шкале. Если ранее в Шаге 4 вы выбрали в качестве первичной упаковки саше или флоупак, перейдите в раздел «Количество в коробке» и сделайте выбор аналогичным образом.</p>
+              </div>
+            </div>
+            <div class="design__controls">
+              <label class="design__range">
+                <input class="design__esc" type="text" name="Колличество" value="300"><span>Количество, грамм</span>
+              </label>
+              <div class="design__control">
+                <button class="design__min"><span class="visually-hidden">Минус</span></button>
+                <div class="scale"><span>152.5</span>
+                  <div class="design__toggle"></div>
+                </div>
+                <button class="design__plus"><span class="visually-hidden">Плюс</span></button>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 7</p>
+                <p class="design__name">Дизайн упаковки</p>
+                <input type="text" value="Порошки">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Выбор дизайна</p>
+                <p>Мы предлагаем вам 3 варианта. Пакет «Эконом»: 1 дизайн-макет упаковки/этикетки без возможности внесения правок. Макет разрабатывает наша Дизайн-студия на основе ваших пожеланий. Пакет «Премиум»: 2 концепции дизайна от нашей Дизайн-студии с возможностью внесения до 5 правок. Пакет «Свой дизайн»: вы присылаете свой макет, а мы адаптируем его под выбранную этикетку и упаковку.</p>
+              </div>
+            </div>
+            <div class="design__items">
+              <div class="design__img"><span class="design__img2"></span></div>
+              <div class="design__pack">
+                <input id="file" type="file" name="свой дизайн">
+                <div class="design__label-file">
+                  <label for="file"><span>Загрузить<br> свой дизайн</span></label>
+                </div>
+                <input id="bg" type="checkbox" name="Фон">
+                <div class="design__pack-label">
+                  <label for="bg">
+                    <div class="design__icon design__icon15"></div><span>Фон</span>
+                  </label>
+                </div>
+                <input id="element" type="checkbox" name="Элементы">
+                <div class="design__pack-label">
+                  <label for="element">
+                    <div class="design__icon design__icon16"></div><span>Элементы</span>
+                  </label>
+                </div>
+                <input id="icon" type="checkbox" name="Иконки">
+                <div class="design__pack-label">
+                  <label for="icon">
+                    <div class="design__icon design__icon17"></div><span>Иконки</span>
+                  </label>
+                </div>
+                <input id="text" type="checkbox" name="Текст">
+                <div class="design__pack-label">
+                  <label for="text">
+                    <div class="design__icon design__icon18"></div><span>Текст</span>
+                  </label>
+                </div>
+              </div>
+              <div class="design__area">
+                <input id="beauty1" type="checkbox" name="Красота и молодость">
+                <div class="design__area-label">
+                  <label for="beauty1">
+                    <div class="design__icon-a design__icon19"></div><span>Красота и молодость</span>
+                  </label>
+                </div>
+                <input id="slender1" type="checkbox" name="Снижение веса">
+                <div class="design__area-label">
+                  <label for="slender1">
+                    <div class="design__icon-a design__icon20"></div><span>Снижение веса</span>
+                  </label>
+                </div>
+                <input id="pure1" type="checkbox" name="Очищение">
+                <div class="design__area-label">
+                  <label for="pure1">
+                    <div class="design__icon-a design__icon21"></div><span>Очищение</span>
+                  </label>
+                </div>
+                <input id="immunity1" type="checkbox" name="Иммунитет">
+                <div class="design__area-label">
+                  <label for="immunity1">
+                    <div class="design__icon-a design__icon22"></div><span>Иммунитет</span>
+                  </label>
+                </div>
+                <input id="women1" type="checkbox" name="Женское здоровье">
+                <div class="design__area-label">
+                  <label for="women1">
+                    <div class="design__icon-a design__icon23"></div><span>Женское здоровье</span>
+                  </label>
+                </div>
+                <input id="anty1" type="checkbox" name="Анстрисесс/Тонус/Память">
+                <div class="design__area-label">
+                  <label for="anty1">
+                    <div class="design__icon-a design__icon24"></div><span>Анстрисесс/Тонус/Память</span>
+                  </label>
+                </div>
+                <input id="sports1" type="checkbox" name="Спортивное питание">
+                <div class="design__area-label">
+                  <label for="sports1">
+                    <div class="design__icon-a design__icon25"></div><span>Спортивное питание</span>
+                  </label>
+                </div>
+                <input id="men1" type="checkbox" name="Мужское здоровье">
+                <div class="design__area-label">
+                  <label for="men1">
+                    <div class="design__icon-a design__icon26"></div><span>Мужское здоровье</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="design__choise">
+            <div class="design__blocks">
+              <div class="design__head">
+                <p class="design__element">Шаг 8</p>
+                <p class="design__name">Итоговая стоимость</p>
+                <input type="text" value="">
+              </div>
+              <div class="design__info">
+                <p class="design__item">Итогововая стоимость продукта</p>
+                <p>Здесь показаны выбранные вами параметры заказа. Вы можете внести изменения, вернувшись на предыдущие шаги конструктора. После указания всех параметров и расчета стоимости нажмите кнопку «Отправить заявку», чтобы передать заказ менеджеру.</p>
+              </div>
+            </div>
+            <div class="design__elements">
+              <div class="design__img"><span class="design__img2"></span></div>
+              <section class="design__finish">
+                <div class="design__results">
+                  <div class="design__result">
+                    <input id="design1" type="text" value="Спортивное питание" disabled>
+                    <label for="design1"><span>Категория</span></label>
+                  </div>
+                  <div class="design__result">
+                    <input id="design2" type="text" value="Саше" disabled>
+                    <label for="design2"><span>Первичная упаковка</span></label>
+                  </div>
+                  <div class="design__result">
+                    <input id="design3" type="text" value="Порошки" disabled>
+                    <label for="design3"><span>Форма продукта</span></label>
+                  </div>
+                  <div class="design__result">
+                    <input id="design4" type="text" value="Не выбрано" disabled>
+                    <label for="design4"><span>Вторичная упаковка</span></label>
+                  </div>
+                  <div class="design__result">
+                    <input id="design5" type="text" value="Рецептура 1" disabled>
+                    <label for="design5"><span>Рецептура</span></label>
+                  </div>
+                  <div class="design__result">
+                    <input id="design6" type="text" value="Свой дизайн" disabled>
+                    <label for="design6"><span>Дизайн упаковки</span></label>
+                  </div>
+                  <div class="design__result">
+                    <input id="design7" type="text" value="300" disabled>
+                    <label for="design7"><span>Колличество</span></label>
+                  </div>
+                </div>
+                <div class="design__results">
+                  <div class="design__result2">
+                    <label for="design8"><span>Объем партии</span></label>
+                    <input id="design8" type="text" value="5000">
+                  </div><span class="design__pointer">Отправить<br> заявку</span>
+                </div>
+              </section>
+            </div>
+            <article class="design__add">     
+              <section class="design__form">
+                <p>Оставьте заявку и мы свяжемся</p>
+                <div class="design__app">
+                  <div class="design__one">
+                    <label class="visually-hidden" for="name">Ваше имя</label>
+                    <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя">
+                    <label class="visually-hidden" for="phone">Ваше имя</label>
+                    <input class="form__input" id="phone" type="tel" name="phone" placeholder="Номер телефона">
+                    <label class="visually-hidden" for="mail">E-mail</label>
+                    <input class="form__input" id="mail" type="mail" name="mail" placeholder="E-mail">
+                  </div>
+                  <div class="design__two">
+                    <textarea class="form__textarea" name="comments" rows="8" cols="49" placeholder="Комментарий"></textarea>
+                    <label class="form__check-text" for="check">
+                      <input class="form__check" id="check" type="checkbox"><span> Я согласен с политикой конфиденциальности</span>
+                    </label>
+                    <input class="form__submit" type="submit" value="Отправить заявку">
+                  </div>
+                </div>
+              </section>
+            </article>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer class="footer__bg"> 
+      <section class="footer container">
+        <div class="footer__elements">
+          <ul class="footer__items">
+            <li>
+              <ul class="footer__social">
+                <li><a href="#"> <span class="visually-hidden">instagram</span><img src="img/instagram.svg"></a></li>
+                <li><a href="#"> <span class="visually-hidden">facebook</span><img src="img/facebook.svg"></a></li>
+                <li><a href="#"> <span class="visually-hidden">telegram</span><img src="img/telegram.svg"></a></li>
+              </ul>
+            </li>
+            <li><a href="tel:+79133934444">+7 (913) 393-44-44</a></li>
+            <li><a href="mailto:admin@uni-eco.com">admin@uni-eco.com</a></li>
+            <li>
+              <p>115230, Россия, г. Москва,<br> Дмитровское шоссе, д. 60</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block" id="catalog1">
+          <p class="footer__block-title" id="catalog">Каталог</p>
+          <ul class="footer__lists" id="catalog-open">
+            <li><a href="#">Капли</a></li>
+            <li><a href="#">Капсулы</a></li>
+            <li><a href="#">Порошки</a></li>
+            <li><a href="#">Шипучие таблетки</a></li>
+          </ul>
+        </div>
+        <div class="footer__block" id="shop1">
+          <p class="footer__block-title" id="shop">Интернет-магазин</p>
+          <ul class="footer__lists footer__hide" id="shop-open">
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Возврат и обмен</a></li>
+            <li><a href="#">Частые вопросы</a></li>
+          </ul>
+        </div>
+        <div class="footer__block" id="company1">
+          <p class="footer__block-title" id="company">Компания</p>
+          <ul class="footer__lists footer__hide" id="company-open">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Новости</a></li>
+          </ul>
+        </div>
+        <div class="footer__block" id="partner1">
+          <p class="footer__block-title" id="partner">Партнерство</p>
+          <ul class="footer__lists footer__hide" id="partner-open">
+            <li><a href="#">Франшиза</a></li>
+            <li><a href="#">Оптовикам</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <footer class="footer__bg2">
+      <div class="footer__politic container"><a href="#">Политика конфиденциальности</a></div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.min-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

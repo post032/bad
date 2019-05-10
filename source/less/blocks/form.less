@@ -25,13 +25,20 @@
 }
 
 .form__block textarea,
-.form__input {
-  width: 90%;
+.form__input,
+.form__textarea {
+  width: 80%;
   background: @basic-color;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
   border: none;
-  min-height: 56px;
+  min-height: 36px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: @purple-text;
+  padding: 10px 15px;
+  outline: none;
 }
 
 .form__input {
@@ -39,12 +46,13 @@
 }
 
 .form__block textarea::placeholder,
-.form__input::placeholder {
+.form__input::placeholder,
+.form__textarea::placeholder {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: @purple-text;
-  padding: 20px 30px;
+  // padding: 20px 30px;
 }
 
 .form__check-text span {
@@ -78,9 +86,12 @@
 @media (min-width: @size-tablet) {
   .form__block textarea,
   .form__check-text,
-  .form__input,
+  .form__input {
+    min-height: 36px;
+  }
+
   .form__submit {
-    min-height: 42px;
+    min-height: 36px;
   }
 
   .form__block {
@@ -131,7 +142,6 @@
   .form__input,
   .form__submit {
     width: 60%;
-    min-height: 56px;
     margin-right: 88px;
   }
 

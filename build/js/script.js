@@ -24,7 +24,7 @@
     $('#form-two').toggleClass('catalog__form-hide');
   });
 
-  $('.connect').click(function() {
+  $('#modal').click(function() {
     $('.modal').toggleClass('modal__open');
   });
 
@@ -256,6 +256,8 @@ $('#recipe5-click').click(function() {
 $('#bank-click').click(function() {
   $(this).addClass('design__label-active');
   $('#design__lists4 .design__label').not(this).removeClass('design__label-active');
+  // $('.design__img #design__img1').removeClass('design__icon13');
+  // $('.design__img #design__img1').removeClass('design__icon14');
   if($('#design__lists4 .design__label').hasClass('design__label-active')){
     $('#design__head-four').addClass('design__head--green');
   }
@@ -266,6 +268,8 @@ $('#bank-click').click(function() {
 $('#sachet-click').click(function() {
   $(this).addClass('design__label-active');
   $('#design__lists4 .design__label').not(this).removeClass('design__label-active');
+  // $('.design__img #design__img1').addClass('design__icon13');
+  // $('.design__img #design__img1').removeClass('design__icon14');
   if($('#design__lists4 .design__label').hasClass('design__label-active')){
     $('#design__head-four').addClass('design__head--green');
   }
@@ -276,6 +280,8 @@ $('#sachet-click').click(function() {
 $('#pack-click').click(function() {
   $(this).addClass('design__label-active');
   $('#design__lists4 .design__label').not(this).removeClass('design__label-active');
+  // $('.design__img #design__img1').addClass('design__icon14');
+  // $('.design__img #design__img1').removeClass('design__icon13');
   if($('#design__lists4 .design__label').hasClass('design__label-active')){
     $('#design__head-four').addClass('design__head--green');
   }
@@ -287,6 +293,7 @@ $('#box-click').click(function() {
   $(this).addClass('design__label-active');
   $('#design__lists5 .design__label').not(this).removeClass('design__label-active');
   $('#box-click label .design__icon').addClass('design__icon14w');
+  // $('#design__img2 .design__img2').css('background-position' : '-355px -10px');
   if($('#design__lists5 .design__label').hasClass('design__label-active')){
     $('#design__head-five').addClass('design__head--green');
   }
@@ -298,6 +305,7 @@ $('#empty-click').click(function() {
   $(this).addClass('design__label-active');
   $('#design__lists5 .design__label').not(this).removeClass('design__label-active');
   $('#box-click label .design__icon').removeClass('design__icon14w');
+  // $('#design__img2 .design__img2').css('background-position' : 'none');
   if($('#design__lists5 .design__label').hasClass('design__label-active')){
     $('#design__head-five').addClass('design__head--green');
   }
@@ -482,71 +490,71 @@ $('#men1-click').click(function() {
   $('#result6').val($('#men1').val());
   $('#design6').val($('#men1').val());
 });
-  // $('.capsule__lists').slick({
-  //     infinite: true,
-  //     speed: 300,
-  //     centerMode: true,
-  //     slidesToShow: 5,
-  //     slidesToScroll: 5,
-  //     responsive: [
-  //       {
-  //         breakpoint: 1024,
-  //         settings: {
-  //           slidesToShow: 4,
-  //           slidesToScroll: 4,
-  //           infinite: true,
-  //         }
-  //       },
-  //       {
-  //         breakpoint: 600,
-  //         settings: {
-  //           slidesToShow: 2,
-  //           slidesToScroll: 2
-  //         }
-  //       },
-  //       {
-  //         breakpoint: 480,
-  //         settings: {
-  //           slidesToShow: 1,
-  //           slidesToScroll: 1
-  //         }
-  //       }
-  //       // You can unslick at a given breakpoint now by adding:
-  //       // settings: "unslick"
-  //       // instead of a settings object
-  //     ]
-  //   });
-  //
-  //   $('.catalog__products-lists').slick({
-  //       infinite: true,
-  //       speed: 300,
-  //       slidesToShow: 4,
-  //       slidesToScroll: 4,
-  //       responsive: [
-  //         {
-  //           breakpoint: 1024,
-  //           settings: {
-  //             slidesToShow: 3,
-  //             slidesToScroll: 3,
-  //             infinite: true,
-  //           }
-  //         },
-  //         {
-  //           breakpoint: 600,
-  //           settings: {
-  //             slidesToShow: 2,
-  //             slidesToScroll: 2
-  //           }
-  //         },
-  //         {
-  //           breakpoint: 480,
-  //           settings: {
-  //             slidesToShow: 1,
-  //             slidesToScroll: 1
-  //           }
-  //         }
-  //         // You can unslick at a given breakpoint now by adding:
-  //         // settings: "unslick"
-  //         // instead of a settings object
-  //       ]
-  //     });
+  $('.capsule__lists').slick({
+      infinite: true,
+      speed: 300,
+      centerMode: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+
+    $('.catalog__products-lists').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });

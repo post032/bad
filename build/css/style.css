@@ -3515,6 +3515,18 @@ input[type="radio"].visually-hidden {
 .design__icon12 {
   background-position: -31px -359px;
 }
+.design__img span {
+  width: 320px;
+  height: 305px;
+  background-image: url("../img/css_sprites.png");
+  background-repeat: no-repeat;
+}
+.design__img .design__img1 {
+  background-position: -10px -10px;
+}
+.design__img .design__img2 {
+  background-position: -355px -10px;
+}
 .design__icon13 {
   background-position: -193px -356px;
 }
@@ -3645,18 +3657,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.design__img span {
-  width: 320px;
-  height: 305px;
-  background-image: url("../img/css_sprites.png");
-  background-repeat: no-repeat;
-}
-.design__img .design__img1 {
-  background-position: -10px -10px;
-}
-.design__img .design__img2 {
-  background-position: -355px -10px;
 }
 .design__list {
   display: -webkit-box;

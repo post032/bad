@@ -9,7 +9,8 @@
   <body>
     <header class="header__bg">
       <div class="header container">
-        <div class="header__menu"><a href="index.html"><img src="img/logo.png"></a>
+        <div class="header__menu"><a href="index.html"><img src="img/logo2.png">
+            <p class="logo__name">ACREO</p><span class="logo__description">Контрактное производство</span></a>
           <button class="menu-open menu-open--htx"><span>Открыть меню</span></button>
         </div>
         <nav class="menu menu-hide">
@@ -35,10 +36,10 @@
         <form action="design.html" method="post">
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head design__head--green" id="design__head-one">
                 <p class="design__element">Шаг 1</p>
                 <p class="design__name">Категория</p>
-                <input type="text" value="Снижение веса">
+                <input id="result" type="text" value="Снижение веса" disabled>
               </div>
               <div class="design__info">
                 <p class="design__item">Выбор категории продукта</p>
@@ -46,51 +47,51 @@
                 <p>Выберете подходящую категорию, кликнув по картинке, и переходите к Шагу 2.</p>
               </div>
             </div>
-            <div class="design__lists">
-              <input id="beauty" type="checkbox" name="Красота и молодость">
-              <div class="design__label">
+            <div class="design__lists" id="design__lists1">
+              <input id="beauty" type="radio" name="категория" value="Красота и молодость">
+              <div class="design__label" id="beauty__click">
                 <label for="beauty">
                   <div class="design__icon design__icon1"></div><span>Красота и молодость</span>
                 </label>
               </div>
-              <input id="slender" type="checkbox" name="Снижение веса">
+              <input id="slender" type="radio" name="категория" value="Снижение веса" checked>
               <div class="design__label design__label-active" id="slender-click">
                 <label for="slender">
-                  <div class="design__icon design__icon2w"></div><span>Снижение веса</span>
+                  <div class="design__icon design__icon2 design__icon2w"></div><span>Снижение веса</span>
                 </label>
               </div>
-              <input id="pure" type="checkbox" name="Очищение">
-              <div class="design__label">
+              <input id="pure" type="radio" name="категория" value="Очищение">
+              <div class="design__label" id="pure-click">
                 <label for="pure">
                   <div class="design__icon design__icon3"></div><span>Очищение</span>
                 </label>
               </div>
-              <input id="immunity" type="checkbox" name="Иммунитет">
-              <div class="design__label">
+              <input id="immunity" type="radio" name="категория" value="Иммунитет">
+              <div class="design__label" id="immunity-click">
                 <label for="immunity">
                   <div class="design__icon design__icon4"></div><span>Иммунитет</span>
                 </label>
               </div>
-              <input id="women" type="checkbox" name="Женское здоровье">
-              <div class="design__label">
+              <input id="women" type="radio" name="категория" value="Женское здоровье">
+              <div class="design__label" id="women-click">
                 <label for="women">
                   <div class="design__icon design__icon5"></div><span>Женское здоровье</span>
                 </label>
               </div>
-              <input id="anty" type="checkbox" name="Анстрисесс/Тонус/Память">
-              <div class="design__label">
+              <input id="anty" type="radio" name="категория" value="Анстрисесс/Тонус/Память">
+              <div class="design__label" id="anty-click">
                 <label for="anty">
                   <div class="design__icon design__icon6"></div><span>Анстрисесс/Тонус/Память</span>
                 </label>
               </div>
-              <input id="sports" type="checkbox" name="Спортивное питание">
-              <div class="design__label">
+              <input id="sports" type="radio" name="категория" value="Спортивное питание">
+              <div class="design__label" id="sports-click">
                 <label for="sports">
                   <div class="design__icon design__icon7"></div><span>Спортивное питание</span>
                 </label>
               </div>
-              <input id="men" type="checkbox" name="Мужское здоровье">
-              <div class="design__label">
+              <input id="men" type="radio" name="категория" value="Мужское здоровье">
+              <div class="design__label" id="men-click">
                 <label for="men">
                   <div class="design__icon design__icon8"></div><span>Мужское здоровье</span>
                 </label>
@@ -99,31 +100,31 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head design__head--green" id="design__head-two">
                 <p class="design__element">Шаг 2</p>
                 <p class="design__name">Форма продукта</p>
-                <input type="text" value="Порошки">
+                <input type="text" value="Порошки" disanled id="result1">
               </div>
               <div class="design__info">
                 <p class="design__item">Выбор формы выпуска</p>
                 <p>Если вы хотите выпустить продукт в капсулах, выберете также вид капсул: целлюлозные или желатиновые. Шипучие таблетки выпускаются в стандартном размере (диаметр 2 см) и белом цвете. Вы всегда можете вернуться на шаг назад и изменить параметры ввода.</p>
               </div>
             </div>
-            <div class="design__lists">
-              <input id="powder" type="checkbox" name="Порошки">
-              <div class="design__label">
+            <div class="design__lists" id="design__lists2">
+              <input id="powder" type="radio" value="Порошки" name="форма" checked>
+              <div class="design__label design__label-active" id="powder-click">
                 <label for="powder">
-                  <div class="design__icon design__icon9"></div><span>Порошки</span>
+                  <div class="design__icon design__icon9 design__icon9w"></div><span>Порошки</span>
                 </label>
               </div>
-              <input id="pod" type="checkbox" name="Капсулы №0">
-              <div class="design__label">
+              <input id="pod" type="radio" value="Капсулы №0" name="форма">
+              <div class="design__label" id="pod-click">
                 <label for="pod">
                   <div class="design__icon design__icon10"></div><span>Капсулы №0</span>
                 </label>
               </div>
-              <input id="bubbly" type="checkbox" name="Шипучие таблетки">
-              <div class="design__label">
+              <input id="bubbly" type="radio" value="Шипучие таблетки" name="форма">
+              <div class="design__label" id="bubbly-click">
                 <label for="bubbly">
                   <div class="design__icon design__icon11"></div><span>Шипучие таблетки</span>
                 </label>
@@ -132,43 +133,43 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head" id="design__head-three">
                 <p class="design__element">Шаг 3</p>
                 <p class="design__name">Рецептура</p>
-                <input type="text" value="Не выбрано">
+                <input type="text" value="Не выбрано" disabled id="result2">
               </div>
               <div class="design__info">
                 <p class="design__item">Выбор рецептуры</p>
                 <p>В предыдущих Шагах вы выбрали категорию и форму выпуска продукта. Для этих параметров мы подобрали доступные варианты рецептур. Все они созданы и протестированы в нашей лаборатории, имеют необходимые патенты и сертификаты. Вы можете добавить в базовую рецептуру свои ингредиенты. Для этого впишите их названия в поле «Добавить свой ингредиент».</p>
               </div>
             </div>
-            <div class="design__lists">
-              <input id="recipe1" type="checkbox" name="Рецептура 1">
-              <div class="design__label">
+            <div class="design__lists" id="design__lists3">
+              <input id="recipe1" type="radio" value="Рецептура 1" name="рецепт">
+              <div class="design__label" id="recipe1-click">
                 <label for="recipe1"><span>Рецептура 1</span>
                   <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
                 </label>
               </div>
-              <input id="recipe2" type="checkbox" name="Рецептура 2">
-              <div class="design__label">
+              <input id="recipe2" type="radio" value="Рецептура 2" name="рецепт">
+              <div class="design__label" id="recipe2-click">
                 <label for="recipe2"><span>Рецептура 2</span>
                   <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
                 </label>
               </div>
-              <input id="recipe3" type="checkbox" name="Рецептура 3">
-              <div class="design__label">
+              <input id="recipe3" type="radio" value="Рецептура 3" name="рецепт">
+              <div class="design__label" id="recipe3-click">
                 <label for="recipe3"><span>Рецептура 3</span>
                   <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
                 </label>
               </div>
-              <input id="recipe4" type="checkbox" name="Рецептура 4">
-              <div class="design__label">
+              <input id="recipe4" type="radio" value="Рецептура 4" name="рецепт">
+              <div class="design__label" id="recipe4-click">
                 <label for="recipe4"><span>Рецептура 4</span>
                   <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
                 </label>
               </div>
-              <input id="recipe5" type="checkbox" name="Рецептура 5">
-              <div class="design__label">
+              <input id="recipe5" type="radio" value="Рецептура 5" name="рецепт">
+              <div class="design__label" id="recipe5-click">
                 <label for="recipe5"><span>Рецептура 5</span>
                   <p>Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники</p>
                 </label>
@@ -177,10 +178,10 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head" id="design__head-four">
                 <p class="design__element">Шаг 4</p>
                 <p class="design__name">Первичная упаковка</p>
-                <input type="text" value="Не выбрано">
+                <input type="text" value="Не выбрано" disabled id="result3">
               </div>
               <div class="design__info">
                 <p class="design__item">Выбор первичной упаковки</p>
@@ -189,21 +190,21 @@
             </div>
             <div class="design__items">
               <div class="design__img"><span class="design__img1"></span></div>
-              <div class="design__list">
-                <input id="bank" type="checkbox" name="Порошки">
-                <div class="design__label">
+              <div class="design__list" id="design__lists4">
+                <input id="bank" type="radio" value="Банка Премиум" name="первичная упаковка">
+                <div class="design__label" id="bank-click">
                   <label for="bank">
                     <div class="design__icon design__icon12"></div><span>Банка</span><span class="design__medium">Премиум</span>
                   </label>
                 </div>
-                <input id="sachet" type="checkbox" name="Капсулы №0">
-                <div class="design__label">
+                <input id="sachet" type="radio" value="Саше Эконом" name="первичная упаковка">
+                <div class="design__label" id="sachet-click">
                   <label for="sachet">
                     <div class="design__icon design__icon13"></div><span>Саше</span><span class="design__medium">Эконом</span>
                   </label>
                 </div>
-                <input id="pack" type="checkbox" name="Шипучие таблетки">
-                <div class="design__label">
+                <input id="pack" type="radio" value="Флоу Пак Эконом" name="первичная упаковка">
+                <div class="design__label" id="pack-click">
                   <label for="pack">
                     <div class="design__icon design__icon14"></div><span>Флоу Пак</span><span class="design__medium">Эконом</span>
                   </label>
@@ -213,10 +214,10 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head" id="design__head-five">
                 <p class="design__element">Шаг 5</p>
                 <p class="design__name">Вторичная упаковка</p>
-                <input type="text" value="Не выбрано">
+                <input type="text" value="Не выбрано" disabled id="result4">
               </div>
               <div class="design__info">
                 <p class="design__item">Выбор вторичной упаковки</p>
@@ -225,15 +226,15 @@
             </div>
             <div class="design__items">
               <div class="design__img"><span class="design__img2"></span></div>
-              <div class="design__list">
-                <input id="box" type="checkbox" name="Красота и молодость">
-                <div class="design__label">
+              <div class="design__list" id="design__lists5">
+                <input id="box" type="radio" value="Коробка Премиум" name="Вторичная упаковка">
+                <div class="design__label" id="box-click">
                   <label for="box">
                     <div class="design__icon design__icon14"></div><span>Коробка</span><span>Премиум</span>
                   </label>
                 </div>
-                <input id="empty" type="checkbox" name="Снижение веса">
-                <div class="design__label">
+                <input id="empty" type="radio" value="Без упаковки" name="Вторичная упаковка">
+                <div class="design__label" id="empty-click">
                   <label for="empty"><span>Без упаковки</span></label>
                 </div>
               </div>
@@ -241,10 +242,10 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head" id="design__head-six">
                 <p class="design__element">Шаг 6</p>
                 <p class="design__name">Колличество</p>
-                <input type="text" value="Не выбрано">
+                <input type="text" value="Не выбрано" disabled>
               </div>
               <div class="design__info">
                 <p class="design__item">Колличество в коробке</p>
@@ -266,10 +267,10 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head" id="design__head-seven">
                 <p class="design__element">Шаг 7</p>
                 <p class="design__name">Дизайн упаковки</p>
-                <input type="text" value="Порошки">
+                <input type="text" value="Не выбрано" disabled id="result6">
               </div>
               <div class="design__info">
                 <p class="design__item">Выбор дизайна</p>
@@ -279,80 +280,77 @@
             <div class="design__items">
               <div class="design__img"><span class="design__img2"></span></div>
               <div class="design__pack">
-                <input id="file" type="file" name="свой дизайн">
-                <div class="design__label-file">
-                  <label for="file"><span>Загрузить<br> свой дизайн</span></label>
-                </div>
-                <input id="bg" type="checkbox" name="Фон">
-                <div class="design__pack-label">
+                <div class="design__label-file"><span>Загрузить<br> свой дизайн</span></div>
+                <input id="bg" type="file" name="Фон" value="свой дизайн">
+                <div class="design__pack-label" id="bg-click">
                   <label for="bg">
                     <div class="design__icon design__icon15"></div><span>Фон</span>
                   </label>
                 </div>
-                <input id="element" type="checkbox" name="Элементы">
-                <div class="design__pack-label">
+                <input id="element" type="file" name="Элементы" value="свой дизайн">
+                <div class="design__pack-label" id="element-click">
                   <label for="element">
                     <div class="design__icon design__icon16"></div><span>Элементы</span>
                   </label>
                 </div>
-                <input id="icon" type="checkbox" name="Иконки">
-                <div class="design__pack-label">
+                <input id="icon" type="file" name="Иконки" value="свой дизайн">
+                <div class="design__pack-label" id="icon-click">
                   <label for="icon">
                     <div class="design__icon design__icon17"></div><span>Иконки</span>
                   </label>
                 </div>
-                <input id="text" type="checkbox" name="Текст">
-                <div class="design__pack-label">
+                <input id="text" type="file" name="Текст" value="свой дизайн">
+                <div class="design__pack-label" id="text-click">
                   <label for="text">
                     <div class="design__icon design__icon18"></div><span>Текст</span>
                   </label>
                 </div>
               </div>
-              <div class="design__area">
-                <input id="beauty1" type="checkbox" name="Красота и молодость">
-                <div class="design__area-label">
+              <div class="design__area" id="design__area">
+                <input id="beauty1" type="radio" name="Дизайн упаковки" value="Красота и молодость">
+                <div class="design__area-label" id="beauty1-click">
                   <label for="beauty1">
                     <div class="design__icon-a design__icon19"></div><span>Красота и молодость</span>
                   </label>
                 </div>
-                <input id="slender1" type="checkbox" name="Снижение веса">
-                <div class="design__area-label">
+                <input id="slender1" type="radio" name="Дизайн упаковки" value="Снижение веса">
+                <div class="design__area-label" id="slender1-click">
                   <label for="slender1">
                     <div class="design__icon-a design__icon20"></div><span>Снижение веса</span>
                   </label>
                 </div>
-                <input id="pure1" type="checkbox" name="Очищение">
-                <div class="design__area-label">
+                <input id="pure1" type="radio" name="Дизайн упаковки" value="Очищение">
+                <div class="design__area-label" id="pure1-click">
                   <label for="pure1">
                     <div class="design__icon-a design__icon21"></div><span>Очищение</span>
                   </label>
                 </div>
-                <input id="immunity1" type="checkbox" name="Иммунитет">
-                <div class="design__area-label">
+                <input id="immunity1" type="radio" name="Дизайн упаковки" value="Иммунитет">
+                <div class="design__area-label" id="immunity1-click">
                   <label for="immunity1">
                     <div class="design__icon-a design__icon22"></div><span>Иммунитет</span>
                   </label>
                 </div>
-                <input id="women1" type="checkbox" name="Женское здоровье">
-                <div class="design__area-label">
+                <input id="women1" type="radio" name="Дизайн упаковки" value="Женское здоровье">
+                <div class="design__area-label" id="women1-click">
                   <label for="women1">
                     <div class="design__icon-a design__icon23"></div><span>Женское здоровье</span>
                   </label>
                 </div>
-                <input id="anty1" type="checkbox" name="Анстрисесс/Тонус/Память">
-                <div class="design__area-label">
+                <input id="anty1" type="radio" name="Дизайн упаковки" value="Анстрисесс/Тонус/Память">
+                <div class="design__area-label" id="anty1-click">
                   <label for="anty1">
                     <div class="design__icon-a design__icon24"></div><span>Анстрисесс/Тонус/Память</span>
                   </label>
                 </div>
-                <input id="sports1" type="checkbox" name="Спортивное питание">
-                <div class="design__area-label">
+                <input id="sports1" type="radio" name="Дизайн упаковки" value="Спортивное питание">
+                <div class="design__area-label" id="sports1-click">
                   <label for="sports1">
                     <div class="design__icon-a design__icon25"></div><span>Спортивное питание</span>
                   </label>
                 </div>
-                <input id="men1" type="checkbox" name="Мужское здоровье">
-                <div class="design__area-label">
+                <input id="men1" type="radio" name="Дизайн упаковки" value="Мужское здоровье">
+                <div class="design__area-label" id="men1-click">
                   <label for="men1">
                     <div class="design__icon-a design__icon26"></div><span>Мужское здоровье</span>
                   </label>
@@ -362,10 +360,10 @@
           </section>
           <section class="design__choise">
             <div class="design__blocks">
-              <div class="design__head">
+              <div class="design__head" id="design__head-eight">
                 <p class="design__element">Шаг 8</p>
                 <p class="design__name">Итоговая стоимость</p>
-                <input type="text" value="">
+                <input type="text" value="" disabled>
               </div>
               <div class="design__info">
                 <p class="design__item">Итогововая стоимость продукта</p>
@@ -459,7 +457,7 @@
         </div>
         <div class="footer__block" id="catalog1">
           <p class="footer__block-title" id="catalog">Каталог</p>
-          <ul class="footer__lists" id="catalog-open">
+          <ul class="footer__lists footer__hide footer__lists-noactive" id="catalog-open">
             <li><a href="#">Капли</a></li>
             <li><a href="#">Капсулы</a></li>
             <li><a href="#">Порошки</a></li>

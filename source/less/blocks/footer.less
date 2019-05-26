@@ -41,13 +41,20 @@
   display: none;
 }
 
+.footer__lists li a {
+  opacity: 1;
+  transition: 1s;
+}
+.footer__lists-noactive li a {
+  opacity: 0;
+}
 .footer__lists {
   animation: bounce 0.5s;
 
     }
     @keyframes bounce {
       0% {
-        transform: translateY(-200px);
+        transform: translateX(-200px);
       }
 }
 

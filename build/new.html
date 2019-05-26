@@ -9,7 +9,8 @@
   <body>
     <header class="header__bg">
       <div class="header container">
-        <div class="header__menu"><a href="index.html"><img src="img/logo.png"></a>
+        <div class="header__menu"><a href="index.html"><img src="img/logo2.png">
+            <p class="logo__name">ACREO</p><span class="logo__description">Контрактное производство</span></a>
           <button class="menu-open menu-open--htx"><span>Открыть меню</span></button>
         </div>
         <nav class="menu menu-hide">
@@ -75,9 +76,8 @@
             <label class="visually-hidden" for="mail">E-mail</label>
             <input class="form__input" id="mail" type="mail" name="mail" placeholder="E-mail">
             <textarea name="comments" rows="8" cols="49" placeholder="Комментарий"></textarea>
-            <label class="form__check-text" for="check">
-              <input class="form__check" id="check" type="checkbox"><span> Я согласен с политикой конфиденциальности</span>
-            </label>
+            <input class="form__check" id="check" type="checkbox">
+            <label class="form__check-text" for="check"><span> Я согласен с политикой конфиденциальности</span></label>
             <input class="form__submit" type="submit" value="Отправить заявку">
           </form>
         </div>
@@ -103,7 +103,7 @@
         </div>
         <div class="footer__block" id="catalog1">
           <p class="footer__block-title" id="catalog">Каталог</p>
-          <ul class="footer__lists" id="catalog-open">
+          <ul class="footer__lists footer__hide footer__lists-noactive" id="catalog-open">
             <li><a href="#">Капли</a></li>
             <li><a href="#">Капсулы</a></li>
             <li><a href="#">Порошки</a></li>

@@ -5,145 +5,145 @@ section.design.container
     
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-one").design__head.design__head--green
           p.design__element Шаг 1
           p.design__name Категория
-          input(type="text" value="Снижение веса")
+          input(id="result" type="text" value="Снижение веса" disabled)
         div.design__info
           p.design__item Выбор категории продукта
           p Мы предлагаем вам 8 самых популярных категорий продукции. При выборе ориентируйтесь на ключевые свойства вашего продукта и учитывайте потребности будущих покупателей.
           p Выберете подходящую категорию, кликнув по картинке, и переходите к Шагу 2.
-      div.design__lists
-        input(id="beauty" type="checkbox" name="Красота и молодость")
-        div.design__label
+      div(id="design__lists1").design__lists
+        input(id="beauty" type="radio" name="категория" value="Красота и молодость")
+        div(id="beauty__click").design__label
           label(for="beauty")
             div.design__icon.design__icon1
             span Красота и молодость
-        input(id="slender" type="checkbox" name="Снижение веса")
+        input(id="slender" type="radio" name="категория" value="Снижение веса" checked)
         div(id="slender-click").design__label.design__label-active
           label(for="slender")
-            div.design__icon.design__icon2w
+            div.design__icon.design__icon2.design__icon2w
             span Снижение веса
-        input(id="pure" type="checkbox" name="Очищение")
-        div.design__label
+        input(id="pure" type="radio" name="категория" value="Очищение")
+        div(id="pure-click").design__label
           label(for="pure")
             div.design__icon.design__icon3
             span Очищение
-        input(id="immunity" type="checkbox" name="Иммунитет")
-        div.design__label
+        input(id="immunity" type="radio" name="категория" value="Иммунитет")
+        div(id="immunity-click").design__label
           label(for="immunity")
             div.design__icon.design__icon4
             span Иммунитет
-        input(id="women" type="checkbox" name="Женское здоровье")
-        div.design__label
+        input(id="women" type="radio" name="категория" value="Женское здоровье")
+        div(id="women-click").design__label
           label(for="women")
             div.design__icon.design__icon5
             span Женское здоровье
-        input(id="anty" type="checkbox" name="Анстрисесс/Тонус/Память")
-        div.design__label
+        input(id="anty" type="radio" name="категория" value="Анстрисесс/Тонус/Память")
+        div(id="anty-click").design__label
           label(for="anty")
             div.design__icon.design__icon6
             span Анстрисесс/Тонус/Память
-        input(id="sports" type="checkbox" name="Спортивное питание")
-        div.design__label
+        input(id="sports" type="radio" name="категория" value="Спортивное питание")
+        div(id="sports-click").design__label
           label(for="sports")
             div.design__icon.design__icon7
             span Спортивное питание
-        input(id="men" type="checkbox" name="Мужское здоровье")
-        div.design__label
+        input(id="men" type="radio" name="категория" value="Мужское здоровье")
+        div(id="men-click").design__label
           label(for="men")
             div.design__icon.design__icon8
             span Мужское здоровье
             
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-two").design__head.design__head--green
           p.design__element Шаг 2
           p.design__name Форма продукта
-          input(type="text" value="Порошки")
+          input(type="text" value="Порошки" disanled id="result1")
         div.design__info
           p.design__item Выбор формы выпуска
           p Если вы хотите выпустить продукт в капсулах, выберете также вид капсул: целлюлозные или желатиновые. Шипучие таблетки выпускаются в стандартном размере (диаметр 2 см) и белом цвете. Вы всегда можете вернуться на шаг назад и изменить параметры ввода.
-      div.design__lists
-        input(id="powder" type="checkbox" name="Порошки")
-        div.design__label
+      div(id="design__lists2").design__lists
+        input(id="powder" type="radio" value="Порошки" name="форма" checked)
+        div(id="powder-click").design__label.design__label-active
           label(for="powder")
-            div.design__icon.design__icon9
+            div.design__icon.design__icon9.design__icon9w
             span Порошки
-        input(id="pod" type="checkbox" name="Капсулы №0")
-        div.design__label
+        input(id="pod" type="radio" value="Капсулы №0" name="форма")
+        div(id="pod-click").design__label
           label(for="pod")
             div.design__icon.design__icon10
             span Капсулы №0
-        input(id="bubbly" type="checkbox" name="Шипучие таблетки")
-        div.design__label
+        input(id="bubbly" type="radio" value="Шипучие таблетки" name="форма")
+        div(id="bubbly-click").design__label
           label(for="bubbly")
             div.design__icon.design__icon11
             span Шипучие таблетки
             
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-three").design__head
           p.design__element Шаг 3
           p.design__name Рецептура
-          input(type="text" value="Не выбрано")
+          input(type="text" value="Не выбрано" disabled id="result2")
         div.design__info
           p.design__item Выбор рецептуры
           p В предыдущих Шагах вы выбрали категорию и форму выпуска продукта. Для этих параметров мы подобрали доступные варианты рецептур. Все они созданы и протестированы в нашей лаборатории, имеют необходимые патенты и сертификаты. Вы можете добавить в базовую рецептуру свои ингредиенты. Для этого впишите их названия в поле «Добавить свой ингредиент».
-      div.design__lists
-        input(id="recipe1" type="checkbox" name="Рецептура 1")
-        div.design__label
+      div(id="design__lists3").design__lists
+        input(id="recipe1" type="radio" value="Рецептура 1" name="рецепт")
+        div(id='recipe1-click').design__label
           label(for="recipe1")
             span Рецептура 1
             p Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники
-        input(id="recipe2" type="checkbox" name="Рецептура 2")
-        div.design__label
+        input(id="recipe2" type="radio" value="Рецептура 2" name="рецепт")
+        div(id='recipe2-click').design__label
           label(for="recipe2")
             span Рецептура 2
             p Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники
-        input(id="recipe3" type="checkbox" name="Рецептура 3")
-        div.design__label
+        input(id="recipe3" type="radio" value="Рецептура 3" name="рецепт")
+        div(id='recipe3-click').design__label
           label(for="recipe3")
             span Рецептура 3
             p Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники
-        input(id="recipe4" type="checkbox" name="Рецептура 4")
-        div.design__label
+        input(id="recipe4" type="radio" value="Рецептура 4" name="рецепт")
+        div(id='recipe4-click').design__label
           label(for="recipe4")
             span Рецептура 4
             p Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники
-        input(id="recipe5" type="checkbox" name="Рецептура 5")
-        div.design__label
+        input(id="recipe5" type="radio" value="Рецептура 5" name="рецепт")
+        div(id='recipe5-click').design__label
           label(for="recipe5")
             span Рецептура 5
             p Протеины для спортсменов с концентратом сывороточного протеина и инулином со вкусом клубники
             
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-four").design__head
           p.design__element Шаг 4
           p.design__name Первичная упаковка
-          input(type="text" value="Не выбрано")
+          input(type="text" value="Не выбрано" disabled id="result3")
         div.design__info
           p.design__item Выбор первичной упаковки
           p В какой первичной упаковке будет представлена ваша продукция? Мы предлагаем вам на выбор тубы, банки, саше и пакеты флоупак. Обратите внимание: для каждой формы упаковки нужно выбрать размер, а также вариант печати — «Эконом» или «Премиум».
       div.design__items
         div.design__img
           span.design__img1
-        div.design__list
-          input(id="bank" type="checkbox" name="Порошки")
-          div.design__label
+        div(id="design__lists4").design__list
+          input(id="bank" type="radio" value="Банка Премиум" name="первичная упаковка")
+          div(id="bank-click").design__label
             label(for="bank")
               div.design__icon.design__icon12
               span Банка
               span.design__medium Премиум
-          input(id="sachet" type="checkbox" name="Капсулы №0")
-          div.design__label
+          input(id="sachet" type="radio" value="Саше Эконом" name="первичная упаковка")
+          div(id="sachet-click").design__label
             label(for="sachet")
               div.design__icon.design__icon13
               span Саше
               span.design__medium Эконом
-          input(id="pack" type="checkbox" name="Шипучие таблетки")
-          div.design__label
+          input(id="pack" type="radio" value="Флоу Пак Эконом" name="первичная упаковка")
+          div(id="pack-click").design__label
             label(for="pack")
               div.design__icon.design__icon14
               span Флоу Пак
@@ -151,35 +151,35 @@ section.design.container
             
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-five").design__head
           p.design__element Шаг 5
           p.design__name Вторичная упаковка
-          input(type="text" value="Не выбрано")
+          input(type="text" value="Не выбрано" disabled id="result4")
         div.design__info
           p.design__item Выбор вторичной упаковки
           p В какой первичной упаковке будет представлена ваша продукция? Мы предлагаем вам на выбор тубы, банки, саше и пакеты флоупак. Обратите внимание: для каждой формы упаковки нужно выбрать размер, а также вариант печати — «Эконом» или «Премиум».
       div.design__items
         div.design__img
           span.design__img2
-        div.design__list
-          input(id="box" type="checkbox" name="Красота и молодость")
-          div.design__label
+        div(id="design__lists5").design__list
+          input(id="box" type="radio" value="Коробка Премиум" name="Вторичная упаковка")
+          div(id="box-click").design__label
             label(for="box")
               div.design__icon.design__icon14
               span Коробка
               span Премиум
-          input(id="empty" type="checkbox" name="Снижение веса")
-          div.design__label
+          input(id="empty" type="radio" value="Без упаковки" name="Вторичная упаковка")
+          div(id="empty-click").design__label
             label(for="empty")
               span Без упаковки
           
           
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-six").design__head
           p.design__element Шаг 6
           p.design__name Колличество
-          input(type="text" value="Не выбрано")
+          input(type="text" value="Не выбрано" disabled)
         div.design__info
           p.design__item Колличество в коробке
           p Какое количество продукции будет в первичной упаковке? Чтобы определить цифру в граммах или штуках, двигайте ползунок по шкале. Если ранее в Шаге 4 вы выбрали в качестве первичной упаковки саше или флоупак, перейдите в раздел «Количество в коробке» и сделайте выбор аналогичным образом.
@@ -199,10 +199,10 @@ section.design.container
               
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-seven").design__head
           p.design__element Шаг 7
           p.design__name Дизайн упаковки
-          input(type="text" value="Порошки")
+          input(type="text" value="Не выбрано" disabled id="result6")
         div.design__info
           p.design__item Выбор дизайна
           p Мы предлагаем вам 3 варианта. Пакет «Эконом»: 1 дизайн-макет упаковки/этикетки без возможности внесения правок. Макет разрабатывает наша Дизайн-студия на основе ваших пожеланий. Пакет «Премиум»: 2 концепции дизайна от нашей Дизайн-студии с возможностью внесения до 5 правок. Пакет «Свой дизайн»: вы присылаете свой макет, а мы адаптируем его под выбранную этикетку и упаковку.
@@ -210,78 +210,76 @@ section.design.container
         div.design__img
           span.design__img2
         div.design__pack
-          input(id="file" type="file" name="свой дизайн")
           div.design__label-file
-            label(for="file")
               span Загрузить<br> свой дизайн
-          input(id="bg" type="checkbox" name="Фон")
-          div.design__pack-label
+          input(id="bg" type="file" name="Фон" value="свой дизайн")
+          div(id="bg-click").design__pack-label
             label(for="bg")
               div.design__icon.design__icon15
               span Фон
-          input(id="element" type="checkbox" name="Элементы")
-          div.design__pack-label
+          input(id="element" type="file" name="Элементы" value="свой дизайн")
+          div(id="element-click").design__pack-label
             label(for="element")
               div.design__icon.design__icon16
               span Элементы
-          input(id="icon" type="checkbox" name="Иконки")
-          div.design__pack-label
+          input(id="icon" type="file" name="Иконки" value="свой дизайн")
+          div(id="icon-click").design__pack-label
             label(for="icon")
               div.design__icon.design__icon17
               span Иконки
-          input(id="text" type="checkbox" name="Текст")
-          div.design__pack-label
+          input(id="text" type="file" name="Текст" value="свой дизайн")
+          div(id="text-click").design__pack-label
             label(for="text")
               div.design__icon.design__icon18
               span Текст
-        div.design__area
-          input(id="beauty1" type="checkbox" name="Красота и молодость")
-          div.design__area-label
+        div(id="design__area").design__area
+          input(id="beauty1" type="radio" name="Дизайн упаковки" value="Красота и молодость")
+          div(id="beauty1-click").design__area-label
             label(for="beauty1")
               div.design__icon-a.design__icon19
               span Красота и молодость
-          input(id="slender1" type="checkbox" name="Снижение веса")
-          div.design__area-label
+          input(id="slender1" type="radio" name="Дизайн упаковки" value="Снижение веса")
+          div(id="slender1-click").design__area-label
             label(for="slender1")
               div.design__icon-a.design__icon20
               span Снижение веса
-          input(id="pure1" type="checkbox" name="Очищение")
-          div.design__area-label
+          input(id="pure1" type="radio" name="Дизайн упаковки" value="Очищение")
+          div(id="pure1-click").design__area-label
             label(for="pure1")
               div.design__icon-a.design__icon21
               span Очищение
-          input(id="immunity1" type="checkbox" name="Иммунитет")
-          div.design__area-label
+          input(id="immunity1" type="radio" name="Дизайн упаковки" value="Иммунитет")
+          div(id="immunity1-click").design__area-label
             label(for="immunity1")
               div.design__icon-a.design__icon22
               span Иммунитет
-          input(id="women1" type="checkbox" name="Женское здоровье")
-          div.design__area-label
+          input(id="women1" type="radio" name="Дизайн упаковки" value="Женское здоровье")
+          div(id="women1-click").design__area-label
             label(for="women1")
               div.design__icon-a.design__icon23
               span Женское здоровье
-          input(id="anty1" type="checkbox" name="Анстрисесс/Тонус/Память")
-          div.design__area-label
+          input(id="anty1" type="radio" name="Дизайн упаковки" value="Анстрисесс/Тонус/Память")
+          div(id="anty1-click").design__area-label
             label(for="anty1")
               div.design__icon-a.design__icon24
               span Анстрисесс/Тонус/Память
-          input(id="sports1" type="checkbox" name="Спортивное питание")
-          div.design__area-label
+          input(id="sports1" type="radio" name="Дизайн упаковки" value="Спортивное питание")
+          div(id="sports1-click").design__area-label
             label(for="sports1")
               div.design__icon-a.design__icon25
               span Спортивное питание
-          input(id="men1" type="checkbox" name="Мужское здоровье")
-          div.design__area-label
+          input(id="men1" type="radio" name="Дизайн упаковки" value="Мужское здоровье")
+          div(id="men1-click").design__area-label
             label(for="men1")
               div.design__icon-a.design__icon26
               span Мужское здоровье
               
     section.design__choise
       div.design__blocks
-        div.design__head
+        div(id="design__head-eight").design__head
           p.design__element Шаг 8
           p.design__name Итоговая стоимость
-          input(type="text" value="")
+          input(type="text" value="" disabled)
         div.design__info
           p.design__item Итогововая стоимость продукта
           p Здесь показаны выбранные вами параметры заказа. Вы можете внести изменения, вернувшись на предыдущие шаги конструктора. После указания всех параметров и расчета стоимости нажмите кнопку «Отправить заявку», чтобы передать заказ менеджеру.

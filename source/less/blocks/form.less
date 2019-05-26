@@ -83,14 +83,54 @@
 .form__img {
   display: none;
 }
+
+.form__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.form__check + label {
+  position: relative;
+  top: 0;
+  left: 2px;
+  cursor: pointer;
+}
+
+.form__check + label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -16px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  background: @purple-bg;
+}
+
+.form__check:checked + label::after {
+  opacity: 1;
+}
+
+.form__check + label::after {
+  content: "";
+  position: absolute;
+  bottom: 21px;
+  left: -13px;
+  width: 10px;
+  height: 5px;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all 0.2s;
+}
 @media (min-width: @size-tablet) {
   .form__block textarea,
   .form__check-text,
   .form__input {
-    min-height: 36px;
-  }
-
-  .form__submit {
     min-height: 36px;
   }
 
@@ -125,6 +165,8 @@
 
   .form__title {
     margin-left: 64px;
+    margin-top: 75px;
+    margin-bottom: 52px;
   }
 }
 @media (min-width: @size-desktop) {
@@ -143,6 +185,10 @@
   .form__submit {
     width: 60%;
     margin-right: 88px;
+  }
+
+  .form__submit {
+    width: 65%;
   }
 
   .form__block form {

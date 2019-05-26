@@ -42,6 +42,8 @@
   line-height: 17px;
   position: relative;
   color: @text-color;
+  margin-top: 7px;
+  margin-bottom: 10px;
 }
 
 .catalog__form-title span {
@@ -66,12 +68,13 @@
 .catalog__form-lists {
   margin: 0;
   list-style-type: none;
+  padding-bottom: 1px;
 }
 
 .catalog__form-lists li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .catalog__form-hide {
@@ -155,6 +158,52 @@
   margin-top: 19px;
   margin-bottom: 8px;
 }
+
+.catalog__form-lists li input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.catalog__form-input + label {
+  position: relative;
+  top: 0;
+  left: 2px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.catalog__form-input + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid @text-color;
+  background: @gray-bg;
+}
+
+.catalog__form-input:checked + label::after {
+  opacity: 1;
+}
+
+.catalog__form-input + label::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 2px;
+  width: 10px;
+  height: 5px;
+  border-bottom: 1px solid @text-color;
+  border-left: 1px solid @text-color;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
 @media (min-width: @size-tablet) {
   .catalog__products-lists li a img {
     width: 172px;
@@ -167,15 +216,31 @@
     margin-bottom: 52px;
   }
 
+  .catalog__products-lists {
+    margin: 0;
+    margin-top: 30px;
+    width: 92%;
+margin-left: 50px;
+  }
+
+  .catalog__search {
+    margin: 0 50px;
+  }
+
   .catalog__form {
-    height: 450px;
+    width: 220px;
+    height: 387px;
     margin-left: 64px;
     margin-right: 0;
   }
 
+  .catalog__form-lists {
+    width: 197px;
+  }
+
   .catalog__title {
     margin-left: 64px;
-    margin-bottom: 36px;
+    margin-bottom: 48px;
     .title-t;
   }
 
@@ -188,14 +253,16 @@
   }
 }
 @media (min-width: @size-desktop) {
-  .catalog__products-lists {
-    margin: 0;
-    width: 100%;
+  // .catalog__products-lists {
+  //   // margin: 0;
+  //   width: 100%;
+  // }
+
+  .catalog__products-lists li{
+    margin-right: 49px;
   }
 
-  .catalog__products-lists li,
   .catalog__search {
-    margin-left: 49px;
-    margin-right: 49px;
+    width: 710px;
   }
 }

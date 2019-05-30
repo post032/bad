@@ -25,9 +25,12 @@
   });
 
   $('#modal').click(function() {
-    $('.modal').toggleClass('modal__open');
+    $('.modal').removeClass('modal__open');
   });
 
+  $('.modal__close').click(function() {
+    $('.modal').addClass('modal__open');
+  });
 
   $('#catalog').click(function() {
     $('#catalog1').toggleClass('footer__rotate');

@@ -34,7 +34,32 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.modal__close {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.modal__close::after,
+.modal__close::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 13px;
+  right: 3px;
+}
 
+.modal__close::after {
+  transform: rotate(45deg);
+}
+
+.modal__close::before {
+  transform: rotate(-45deg);
+}
 
 .modal .form__submit,
 .modal textarea,

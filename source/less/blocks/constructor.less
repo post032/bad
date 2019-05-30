@@ -40,7 +40,7 @@
   line-height: 45px;
   font-weight: 900;
   color: @text-menu;
-  margin: 16px 20px;
+  margin: 16px 0;
 }
 
 .constructor__block span {
@@ -72,8 +72,8 @@
   height: 16px;
   background: url("../img/Arrow.svg") no-repeat;
   position: absolute;
-  top: 25px;
-  left: 190px;
+  top: 29px;
+  left: 183px;
 }
 @media (min-width: @size-tablet) {
   .constructor {
@@ -89,13 +89,7 @@
     min-height: 337px;
   }
 
-  .constructor__block p {
-    font-size: 36px;
-    line-height: 45px;
-  }
-
   .constructor__block span {
-    margin-left: 20px;
     font-size: 46px;
     line-height: 45px;
   }
@@ -104,13 +98,36 @@
     font-size: 48px;
   }
 
-  .constructor__block {
-    align-items: flex-start;
-  }
+
 }
 @media (min-width: @size-desktop) {
   .constructor__block p,
   .constructor__block span {
     margin-left: 64px;
   }
+  
+  .constructor__block {
+    margin-right: 30px;
+    align-items: flex-start;
+  }
+
+  .constructor__block2 a {
+    margin-left: 200px;
+  }
+
+  .constructor__block p {
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .constructor__block span {
+    margin-left: 73px;
+    font-size: 90px;
+    line-height: 139px;
+    margin-top: 0;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    text-align: center;
+}
 }

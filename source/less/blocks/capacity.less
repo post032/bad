@@ -20,14 +20,14 @@
   border-radius: 3px;
   display: flex;
   margin-bottom: 22px;
-  width: 90%;
+  width: 88%;
 }
 
 .capacity__lists li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 10px;
   width: 100%;
 }
 
@@ -60,8 +60,8 @@
   line-height: 20px;
   color: @text-color;
 }
-
-.capacity__lists li span {
+.capacity__range,
+.capacity__sum {
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
@@ -69,6 +69,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+.capacity__sum {
+  margin-top: 38px;
 }
 @media (min-width: @size-tablet) {
   .capacity__lists li img {
@@ -83,22 +86,29 @@
   }
 
   .capacity__info {
-    margin-right: 100px;
-  }
+    margin-right: 0;
+    width: 300px;
+}
 
   .capacity__info .capacity__info-title {
     font-size: 26px;
     line-height: 30px;
+    margin: 18px 0;
   }
 
   .capacity__info p {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 30px;
   }
 
-  .capacity__lists li span {
+  .capacity__sum {
     font-size: 26px;
-    line-height: 30px;
+    line-height: 28px;
+  }
+
+  .capacity__range {
+    font-size: 24px;
   }
 
   .capacity__lists li a {
@@ -107,9 +117,20 @@
   }
 }
 @media (min-width: @size-desktop) {
+  .capacity {
+    margin-bottom: 55px;
+  }
+  .capacity__title {
+    margin-bottom: 60px;
+  }
   .capacity__info p {
     font-size: 24px;
     line-height: 29px;
+  }
+
+  .capacity__info {
+    margin-right: 130px;
+    width: 372px;
   }
 
   .capacity__info .capacity__info-title {
@@ -117,8 +138,11 @@
     line-height: 44px;
   }
 
-  .capacity__lists li span {
+  .capacity__sum {
     font-size: 36px;
-    line-height: 45px;
+  }
+
+  .capacity__range {
+    font-size: 24px;
   }
 }

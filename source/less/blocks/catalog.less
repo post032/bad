@@ -40,6 +40,7 @@
 .catalog__form-title {
   font-size: 14px;
   line-height: 17px;
+  font-weight: 600;
   position: relative;
   color: @text-color;
   margin-top: 7px;
@@ -82,22 +83,27 @@
 }
 
 .catalog__search {
-  margin: 0 20px;
-  width: 90%;
+  width: 100%;
   height: 30px;
   background: #F1F1F1;
   border: none;
   padding: 7px 41px;
-  margin-bottom: 30px;
+}
+
+.catalog__icon {
+  position: relative;
+  margin: 0 20px;
 }
 
 .catalog__icon::before {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
-  background: url("../img/search.svg") no-repeat;
+  width: 15px;
+  height: 15px;
+  background: url("../img/search.png") no-repeat;
   position: absolute;
+  top: 10px;
+  left: 17px;
 }
 
 .catalog__search::placeholder {
@@ -116,10 +122,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 20px;
 }
 
+@media (min-width: 375px) {
+.catalog__products-lists {
+justify-content: space-between;
+}
+}
 .catalog__products-lists li {
   width: 160px;
   min-height: 185px;
@@ -204,7 +215,15 @@
   transition: all 0.2s;
 }
 
+.catalog__products {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: @size-tablet) {
+  .catalog__icon {
+    margin-left: 46px;
+  }
   .catalog__products-lists li a img {
     width: 172px;
     height: 142px;
@@ -219,12 +238,8 @@
   .catalog__products-lists {
     margin: 0;
     margin-top: 30px;
-    width: 92%;
+    width: 85%;
 margin-left: 50px;
-  }
-
-  .catalog__search {
-    margin: 0 50px;
   }
 
   .catalog__form {

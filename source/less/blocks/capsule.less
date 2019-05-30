@@ -44,7 +44,7 @@
 }
 
 .capsule__name .capsule__name-title {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 87px;
   font-weight: bold;
   background: @color-gradient;
@@ -98,6 +98,7 @@
 
   .capsule__name .capsule__name-title {
     font-size: 55px;
+    margin: 44px 0;
   }
 
   .capsule__lists li a img,
@@ -118,28 +119,33 @@
   .capsule__lists li {
     width: 190px;
     min-height: 174px;
-    // margin: 37px;
   }
-
-  // .capsule__lists {
-  //   margin-left: 28px;
-  // }
 
   .capsule__lists li a p {
     font-size: 14px;
   }
 }
 @media (min-width: @size-desktop) {
-  .capsule__name h3 {
+.capsule {
+  margin-bottom: 108px;
+}
+  .capsule__name .capsule__name-title {
     font-size: 72px;
   }
 
+.capsule__title {
+  margin-bottom: 58px;
+}
+
   .capsule__text {
     font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 4px;
   }
 
   .capsule__text,
-    .capsule__name {
+  .capsule__name {
+      width: 88%;
       margin-left: 64px;
     }
 }

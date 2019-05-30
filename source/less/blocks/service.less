@@ -22,11 +22,14 @@
 
 .service__lists li {
   margin-bottom: 49px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .service__img {
   width: 280px;
-  height: 280px;
+  min-height: 280px;
   background: @gray-bg;
   border-radius: 3px;
   display: flex;
@@ -70,9 +73,6 @@ line-height: 20px;
     .button-t;
   }
 
-  .service__img {
-    margin-bottom: 0;
-}
   .service__info span {
     font-size: 36px;
     line-height: 44px;
@@ -86,7 +86,8 @@ line-height: 20px;
 
   .service__img {
     width: 315px;
-    height: 315px;
+    min-height: 240px;
+    margin-bottom: 0;
   }
 
   .service__block {
@@ -98,14 +99,21 @@ line-height: 20px;
 
   .service__lists {
     margin-left: 64px;
+    margin-bottom: 78px;
   }
 
   .service__lists li {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 @media (min-width: @size-desktop) {
   .service {
     margin-bottom: 134px;
+  }
+
+  .service__img {
+    min-height: 315px;
   }
 }

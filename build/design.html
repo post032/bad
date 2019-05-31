@@ -178,7 +178,7 @@
             <div class="design__blocks">
               <div class="design__head" id="design__head-four">
                 <p class="design__element">Шаг 4</p>
-                <p class="design__name">Первичная упаковка</p>
+                <p class="design__name">Первичная&nbsp;упаковка</p>
                 <input type="text" value="Не выбрано" disabled id="result3">
               </div>
               <div class="design__info">
@@ -204,7 +204,7 @@
                 <input id="pack" type="radio" value="Флоу Пак Эконом" name="первичная упаковка">
                 <div class="design__label" id="pack-click">
                   <label for="pack">
-                    <div class="design__icon design__icon14"></div><span>Флоу Пак</span><span class="design__medium">Эконом</span>
+                    <div class="design__icon design__icon14a"></div><span>Флоу Пак</span><span class="design__medium">Эконом</span>
                   </label>
                 </div>
               </div>
@@ -214,7 +214,7 @@
             <div class="design__blocks">
               <div class="design__head" id="design__head-five">
                 <p class="design__element">Шаг 5</p>
-                <p class="design__name">Вторичная упаковка</p>
+                <p class="design__name">Вторичная&nbsp;упаковка</p>
                 <input type="text" value="Не выбрано" disabled id="result4">
               </div>
               <div class="design__info">
@@ -243,7 +243,7 @@
               <div class="design__head" id="design__head-six">
                 <p class="design__element">Шаг 6</p>
                 <p class="design__name">Колличество</p>
-                <input type="text" value="Не выбрано" disabled>
+                <input id="result-range" type="text" value="Не выбрано" disabled>
               </div>
               <div class="design__info">
                 <p class="design__item">Колличество в коробке</p>
@@ -252,14 +252,10 @@
             </div>
             <div class="design__controls">
               <label class="design__range">
-                <input class="design__esc" type="text" name="Колличество" value="300"><span>Количество, грамм</span>
+                <input class="design__esc" id="range-value" type="text" name="Колличество" value="300"><span>Количество, грамм</span>
               </label>
-              <div class="design__control">
-                <button class="design__min"><span class="visually-hidden">Минус</span></button>
-                <div class="scale"><span>152.5</span>
-                  <div class="design__toggle"></div>
-                </div>
-                <button class="design__plus"><span class="visually-hidden">Плюс</span></button>
+              <div class="design__control"><span class="scale__value">152.5</span>
+                <input class="scale" id="range" type="range" step="1" min="5" max="300" value="300">
               </div>
             </div>
           </section>
@@ -267,7 +263,7 @@
             <div class="design__blocks">
               <div class="design__head" id="design__head-seven">
                 <p class="design__element">Шаг 7</p>
-                <p class="design__name">Дизайн упаковки</p>
+                <p class="design__name">Дизайн&nbsp;упаковки</p>
                 <input type="text" value="Не выбрано" disabled id="result6">
               </div>
               <div class="design__info">
@@ -275,29 +271,29 @@
                 <p>Мы предлагаем вам 3 варианта. Пакет «Эконом»: 1 дизайн-макет упаковки/этикетки без возможности внесения правок. Макет разрабатывает наша Дизайн-студия на основе ваших пожеланий. Пакет «Премиум»: 2 концепции дизайна от нашей Дизайн-студии с возможностью внесения до 5 правок. Пакет «Свой дизайн»: вы присылаете свой макет, а мы адаптируем его под выбранную этикетку и упаковку.</p>
               </div>
             </div>
-            <div class="design__items">
+            <div class="design__items design__items--height">
               <div class="design__img"><span class="design__img2"></span></div>
               <div class="design__pack">
                 <div class="design__label-file"><span>Загрузить<br> свой дизайн</span></div>
-                <input id="bg" type="file" name="Фон" value="свой дизайн">
+                <input id="bg" type="checkbox" name="Фон" value="свой дизайн">
                 <div class="design__pack-label" id="bg-click">
                   <label for="bg">
                     <div class="design__icon design__icon15"></div><span>Фон</span>
                   </label>
                 </div>
-                <input id="element" type="file" name="Элементы" value="свой дизайн">
+                <input id="element" type="checkbox" name="Элементы" value="свой дизайн">
                 <div class="design__pack-label" id="element-click">
                   <label for="element">
                     <div class="design__icon design__icon16"></div><span>Элементы</span>
                   </label>
                 </div>
-                <input id="icon" type="file" name="Иконки" value="свой дизайн">
+                <input id="icon" type="checkbox" name="Иконки" value="свой дизайн">
                 <div class="design__pack-label" id="icon-click">
                   <label for="icon">
                     <div class="design__icon design__icon17"></div><span>Иконки</span>
                   </label>
                 </div>
-                <input id="text" type="file" name="Текст" value="свой дизайн">
+                <input id="text" type="checkbox" name="Текст" value="свой дизайн">
                 <div class="design__pack-label" id="text-click">
                   <label for="text">
                     <div class="design__icon design__icon18"></div><span>Текст</span>
@@ -360,7 +356,7 @@
             <div class="design__blocks">
               <div class="design__head" id="design__head-eight">
                 <p class="design__element">Шаг 8</p>
-                <p class="design__name">Итоговая стоимость</p>
+                <p class="design__name">Итоговая&nbsp;стоимость</p>
                 <input type="text" value="" disabled>
               </div>
               <div class="design__info">
@@ -423,9 +419,8 @@
                   </div>
                   <div class="design__two">
                     <textarea class="form__textarea" name="comments" rows="8" cols="49" placeholder="Комментарий"></textarea>
-                    <label class="form__check-text" for="check">
-                      <input class="form__check" id="check" type="checkbox"><span> Я согласен с политикой конфиденциальности</span>
-                    </label>
+                    <input class="form__check" id="check" type="checkbox">
+                    <label class="form__check-text" for="check"><span> Я согласен с политикой конфиденциальности</span></label>
                     <input class="form__submit" type="submit" value="Отправить заявку">
                   </div>
                 </div>

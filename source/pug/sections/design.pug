@@ -121,7 +121,7 @@ section.design.container
       div.design__blocks
         div(id="design__head-four").design__head
           p.design__element Шаг 4
-          p.design__name Первичная упаковка
+          p.design__name Первичная&nbsp;упаковка
           input(type="text" value="Не выбрано" disabled id="result3")
         div.design__info
           p.design__item Выбор первичной упаковки
@@ -145,7 +145,7 @@ section.design.container
           input(id="pack" type="radio" value="Флоу Пак Эконом" name="первичная упаковка")
           div(id="pack-click").design__label
             label(for="pack")
-              div.design__icon.design__icon14
+              div.design__icon.design__icon14a
               span Флоу Пак
               span.design__medium Эконом
             
@@ -153,7 +153,7 @@ section.design.container
       div.design__blocks
         div(id="design__head-five").design__head
           p.design__element Шаг 5
-          p.design__name Вторичная упаковка
+          p.design__name Вторичная&nbsp;упаковка
           input(type="text" value="Не выбрано" disabled id="result4")
         div.design__info
           p.design__item Выбор вторичной упаковки
@@ -179,55 +179,56 @@ section.design.container
         div(id="design__head-six").design__head
           p.design__element Шаг 6
           p.design__name Колличество
-          input(type="text" value="Не выбрано" disabled)
+          input(id="result-range" type="text" value="Не выбрано" disabled)
         div.design__info
           p.design__item Колличество в коробке
           p Какое количество продукции будет в первичной упаковке? Чтобы определить цифру в граммах или штуках, двигайте ползунок по шкале. Если ранее в Шаге 4 вы выбрали в качестве первичной упаковки саше или флоупак, перейдите в раздел «Количество в коробке» и сделайте выбор аналогичным образом.
       div.design__controls
         label.design__range
-          input.design__esc(type="text" name="Колличество" value="300")
+          input.design__esc( id="range-value" type="text" name="Колличество" value="300")
           span Количество, грамм
         div.design__control
-          button.design__min
-            span.visually-hidden Минус
-          div.scale
-            span 152.5
-            div.design__toggle
-          button.design__plus
-            span.visually-hidden Плюс
+          //- button.design__min
+          //-   span.visually-hidden Минус
+          span.scale__value 152.5
+          //-   div.design__toggle
+          //- button.design__plus
+          //-   span.visually-hidden Плюс
+          input(id="range" type="range" step="1" min="5" max="300" value="300").scale
+          
               
               
     section.design__choise
       div.design__blocks
         div(id="design__head-seven").design__head
           p.design__element Шаг 7
-          p.design__name Дизайн упаковки
+          p.design__name Дизайн&nbsp;упаковки
           input(type="text" value="Не выбрано" disabled id="result6")
         div.design__info
           p.design__item Выбор дизайна
           p Мы предлагаем вам 3 варианта. Пакет «Эконом»: 1 дизайн-макет упаковки/этикетки без возможности внесения правок. Макет разрабатывает наша Дизайн-студия на основе ваших пожеланий. Пакет «Премиум»: 2 концепции дизайна от нашей Дизайн-студии с возможностью внесения до 5 правок. Пакет «Свой дизайн»: вы присылаете свой макет, а мы адаптируем его под выбранную этикетку и упаковку.
-      div.design__items
+      div.design__items.design__items--height
         div.design__img
           span.design__img2
         div.design__pack
           div.design__label-file
               span Загрузить<br> свой дизайн
-          input(id="bg" type="file" name="Фон" value="свой дизайн")
+          input(id="bg" type="checkbox" name="Фон" value="свой дизайн")
           div(id="bg-click").design__pack-label
             label(for="bg")
               div.design__icon.design__icon15
               span Фон
-          input(id="element" type="file" name="Элементы" value="свой дизайн")
+          input(id="element" type="checkbox" name="Элементы" value="свой дизайн")
           div(id="element-click").design__pack-label
             label(for="element")
               div.design__icon.design__icon16
               span Элементы
-          input(id="icon" type="file" name="Иконки" value="свой дизайн")
+          input(id="icon" type="checkbox" name="Иконки" value="свой дизайн")
           div(id="icon-click").design__pack-label
             label(for="icon")
               div.design__icon.design__icon17
               span Иконки
-          input(id="text" type="file" name="Текст" value="свой дизайн")
+          input(id="text" type="checkbox" name="Текст" value="свой дизайн")
           div(id="text-click").design__pack-label
             label(for="text")
               div.design__icon.design__icon18
@@ -278,7 +279,7 @@ section.design.container
       div.design__blocks
         div(id="design__head-eight").design__head
           p.design__element Шаг 8
-          p.design__name Итоговая стоимость
+          p.design__name Итоговая&nbsp;стоимость
           input(type="text" value="" disabled)
         div.design__info
           p.design__item Итогововая стоимость продукта
@@ -336,7 +337,7 @@ section.design.container
               input(id="mail" type="mail" name="mail" placeholder="E-mail").form__input
             div.design__two
               textarea(name="comments" rows="8" cols="49" placeholder="Комментарий").form__textarea
+              input(id="check" type="checkbox").form__check 
               label(for="check").form__check-text
-                input(id="check" type="checkbox").form__check 
                 span  Я согласен с политикой конфиденциальности
               input(type="submit" value="Отправить заявку").form__submit

@@ -49,7 +49,14 @@
     $('#partner-open').toggleClass('footer__hide');
   });
 
+  // $('#range-value').val($('#range').val());
 
+  $(document).on('input change', '#range', function() {
+    $('#range-value').val($('#range').val());
+    $('#design7').val($('#range').val());
+    $('#result-range').val($('#range').val());
+    $('#design__head-six').addClass('design__head--green');
+  });
 
 $('#beauty__click').click(function() {
   $(this).addClass('design__label-active');
@@ -493,71 +500,71 @@ $('#men1-click').click(function() {
   $('#result6').val($('#men1').val());
   $('#design6').val($('#men1').val());
 });
-  $('.capsule__lists').slick({
-      infinite: true,
-      speed: 300,
-      centerMode: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-
-    $('.catalog__products-lists').slick({
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
+  // $('.capsule__lists').slick({
+  //     infinite: true,
+  //     speed: 300,
+  //     centerMode: true,
+  //     slidesToShow: 5,
+  //     slidesToScroll: 5,
+  //     responsive: [
+  //       {
+  //         breakpoint: 1024,
+  //         settings: {
+  //           slidesToShow: 4,
+  //           slidesToScroll: 4,
+  //           infinite: true,
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 600,
+  //         settings: {
+  //           slidesToShow: 2,
+  //           slidesToScroll: 2
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 480,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1
+  //         }
+  //       }
+  //       // You can unslick at a given breakpoint now by adding:
+  //       // settings: "unslick"
+  //       // instead of a settings object
+  //     ]
+  //   });
+  //
+  //   $('.catalog__products-lists').slick({
+  //       infinite: true,
+  //       speed: 300,
+  //       slidesToShow: 4,
+  //       slidesToScroll: 4,
+  //       responsive: [
+  //         {
+  //           breakpoint: 1024,
+  //           settings: {
+  //             slidesToShow: 3,
+  //             slidesToScroll: 3,
+  //             infinite: true,
+  //           }
+  //         },
+  //         {
+  //           breakpoint: 600,
+  //           settings: {
+  //             slidesToShow: 2,
+  //             slidesToScroll: 2
+  //           }
+  //         },
+  //         {
+  //           breakpoint: 480,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1
+  //           }
+  //         }
+  //         // You can unslick at a given breakpoint now by adding:
+  //         // settings: "unslick"
+  //         // instead of a settings object
+  //       ]
+  //     });

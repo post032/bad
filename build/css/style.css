@@ -1462,7 +1462,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   bottom: 21px;
-  left: -13px;
+  left: -23px;
   width: 10px;
   height: 5px;
   border-bottom: 1px solid #ffffff;
@@ -3425,9 +3425,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3489,7 +3489,7 @@ input[type="radio"].visually-hidden {
 .design__form .form__submit,
 .design__form textarea {
   margin-right: 0;
-  width: 85%;
+  width: 95%;
 }
 .design__title {
   margin: 49px 20px 10px;
@@ -3531,6 +3531,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   margin-top: 1px;
   margin-bottom: 3px;
+  width: 250px;
 }
 .design__head input {
   font-weight: 500;
@@ -3544,7 +3545,7 @@ input[type="radio"].visually-hidden {
   padding-left: 30px;
   padding-top: 16px;
   padding-bottom: 13px;
-  width: 285px;
+  width: 254px;
   min-height: 77px;
   background: #7F46C5;
   border-radius: 3px;
@@ -3570,6 +3571,10 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 22px;
   color: #2E2556;
+  margin-bottom: 13px;
+}
+.design__two .form__check-text {
+  text-align: left;
 }
 .design__blocks {
   display: -webkit-box;
@@ -3597,11 +3602,26 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 45px;
-  margin-bottom: 65px;
+}
+.design__lists {
+  margin-top: 40px;
+}
+.design__controls {
+  margin-top: 20px;
+  margin-bottom: 69px;
+}
+.design__lists {
+  margin-bottom: 52px;
+}
+.design__items {
+  margin-bottom: 68px;
 }
 .design__elements {
   margin-bottom: 40px;
@@ -3671,7 +3691,7 @@ input[type="radio"].visually-hidden {
   padding: 9px 30px;
 }
 .design__label label {
-  padding: 18px 43px;
+  padding: 18px 10px;
 }
 .design__icon-a {
   width: 77px;
@@ -3771,6 +3791,9 @@ input[type="radio"].visually-hidden {
 }
 .design__icon14 {
   background-position: -472px -342px;
+}
+.design__icon14a {
+  background-position: -333px -341px;
 }
 .design__icon15 {
   width: 70px;
@@ -3903,6 +3926,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .design__controls {
   width: 100%;
@@ -3953,41 +3980,56 @@ input[type="radio"].visually-hidden {
 }
 .design__range span {
   font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 20px;
   color: #7B25FA;
 }
 .design__control {
   margin-top: 62px;
   position: relative;
 }
-.design__control .scale {
-  width: 300px;
-  height: 7px;
-  background: #00B67B;
-  border-radius: 9.5px;
-  position: relative;
-}
-.design__control .scale span,
-.design__control .scale span::after,
-.design__control .scale span::before {
+.design__control .scale__value,
+.design__control .scale__value::after,
+.design__control .scale__value::before {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #7F46C5;
 }
+.design__control .scale::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #7B25FA;
+  border-radius: 50%;
+  cursor: ew-resize;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  outline: none;
+  position: relative;
+  z-index: 200;
+}
 .design__control .scale {
   position: relative;
   width: 300px;
+  height: 7px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  border-radius: 9.5px;
+  background: #00B67B;
+  outline: none;
 }
-.design__control .scale span {
+.design__control .scale__value {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: -22px;
 }
-.design__control .scale span::before {
+.design__control .scale__value::before {
   content: "5";
   display: block;
   width: 31px;
@@ -3996,7 +4038,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: -136px;
 }
-.design__control .scale span::after {
+.design__control .scale__value::after {
   content: "300";
   display: block;
   width: 31px;
@@ -4069,9 +4111,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .design__area {
   height: -webkit-max-content;
@@ -4115,7 +4157,6 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 20px;
-  padding-bottom: 65px;
 }
 .design__results {
   display: -webkit-box;
@@ -4129,9 +4170,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  margin-left: 40px;
+  margin-left: 64px;
   margin-right: 15px;
-  margin-top: 26px;
+  margin-top: 15px;
 }
 .design__result,
 .design__result2 {
@@ -4142,6 +4183,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 25px;
 }
 .design__result input {
   background: #F1F1F1;
@@ -4151,7 +4193,7 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   color: #393939;
   width: 150px;
-  height: 32px;
+  height: 22px;
 }
 .design__result:first-of-type input {
   width: 195px;
@@ -4203,6 +4245,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   text-align: center;
   margin-right: 35px;
+  top: -12px;
 }
 .design__pointer::after {
   content: "";
@@ -4225,11 +4268,52 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 @media (min-width: 768px) {
+  .design__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .design__name {
+    width: 300px;
+  }
+  .design__controls {
+    margin-left: 93px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .design__label {
+    margin: 0 0 30px;
+  }
+  .design__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .design__pack {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #design__lists2 {
+    width: 630px;
+  }
+  #design__lists3 {
+    margin-bottom: 36px;
+  }
+  .design__list {
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    min-height: 380px;
   }
   .design__pack {
     margin-left: 24px;
@@ -4247,10 +4331,10 @@ input[type="radio"].visually-hidden {
   .design__controls .scale {
     width: 570px;
   }
-  .design__control .scale span::before {
+  .design__control .scale__value::before {
     left: -268px;
   }
-  .design__control .scale span::after {
+  .design__control .scale__value::after {
     right: -268px;
   }
   .design__control button {
@@ -4274,7 +4358,8 @@ input[type="radio"].visually-hidden {
   }
   .design__form {
     width: 980px;
-    min-height: 375px;
+    min-height: 345px;
+    border-radius: 3px;
   }
   .design__app {
     display: -webkit-box;
@@ -4292,6 +4377,7 @@ input[type="radio"].visually-hidden {
   .design__text {
     width: 410px;
     margin-left: 64px;
+    margin-bottom: 36px;
   }
   .design__block {
     display: -webkit-box;
@@ -4311,7 +4397,7 @@ input[type="radio"].visually-hidden {
   }
   .design__title {
     margin-left: 64px;
-    margin-bottom: 36px;
+    margin-bottom: 15px;
     font-size: 36px;
     text-align: left;
   }
@@ -4327,20 +4413,13 @@ input[type="radio"].visually-hidden {
   .design__head {
     margin-right: 30px;
   }
-  .design__item {
-    margin-top: 0;
-  }
-  .design__list .design__label {
-    margin: 0 0 30px 30px;
-  }
-  .design__label {
-    margin: 15px 30px 15px 0;
-  }
-  .design__controls,
-  .design__elements,
-  .design__items,
   .design__lists {
-    margin-left: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .design__info {
     margin: 0;
@@ -4350,15 +4429,43 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 71px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .design__items--height {
+    margin-bottom: 40px;
+  }
+  .design__blocks {
+    height: 106px;
+  }
+  .design__info p {
+    margin: 0;
+  }
+  .design__form p {
+    margin-top: 11px;
+    margin-left: 29px;
+    margin-bottom: 31px;
   }
 }
 @media (min-width: 1070px) {
+  .design__lists {
+    width: 852px;
+    margin-left: 93px;
+  }
+  .design__elements,
+  .design__items {
+    margin-left: 93px;
+  }
   .design__finish {
     width: 456px;
-    padding-bottom: 0;
   }
   .design__controls {
     width: 725px;
+  }
+  .design__add {
+    width: 975px;
   }
   .design__control .design__min {
     left: -50px;
@@ -4375,6 +4482,23 @@ input[type="radio"].visually-hidden {
   }
   .design__two .form__submit {
     min-height: 56px;
-    width: 91%;
+    width: 100%;
+  }
+  .design__list .design__label {
+    margin: 0 0 0 34px;
+  }
+  .design__head {
+    position: relative;
+  }
+  .design__head::before {
+    content: "";
+    display: block;
+    width: 1px;
+    border-left: 2px dashed #7B25FA;
+    position: absolute;
+    top: 106px;
+  }
+  #design__head-one .design__head::before {
+    height: 200px;
   }
 }
